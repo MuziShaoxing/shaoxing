@@ -1,0 +1,85 @@
+sidebar:
+  menu:
+    博客: '[博客](/)'
+    相册: '[空间](/wiki/)'
+    便签: '[便笺](/notes/)'
+    更多: '[更多](/about/)'
+  # 侧边栏小工具
+  widgets:
+    # 主页/项目/类别/标签/归档页面中的默认布局
+    default: [welcome, recent] # 最近更新
+    recent:
+      layout: recent
+      rss: /atom.xml # 需要插件npm i hexo-generator-feed
+      limit: 5 # 显示帖子数
+    welcome:
+      layout: markdown
+      title: 欢迎
+      content:
+        - '欢迎来到我的小站。'
+# 文章
+article:  # 如果没有指定 excerpt 和 description，将自动取多长的内容作为文章摘要？
+  auto_excerpt: 0
+  # 分类颜色
+  category_color:
+    '新闻稿': '#DA0F47'
+  # 文章许可协议
+  license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
+  # 分享
+  share: [wechat, weibo, email, link]
+  # 你可能感兴趣的文章-需要安装npm i hexo-related-popular-posts
+  related_posts:
+    enable: true
+    title: 您可能感兴趣的文章
+    max_count: 5
+######## 评论 ########
+
+comments:
+  service: valine
+  valine:
+    appId: RiAUrbaCwE6vUfnRAu1bLoN2-gzGzoHsz # 账号
+    appKey: aHSy9hrs4ywfy5iBrAlB0XP8         # 密码
+    placeholder: 踏雪怎无痕？少侠，请留下你的观点！
+    requiredFields: [nick, mail]
+    enableQQ: true                          # 不稳定的头像链接
+    recordIP: true                          # 记录评论ip
+    avatar: mp                              # 头像参考 https://valine.js.org/avatar
+    pageSize: 10                            # 评论列表页面大小
+    lang: zh-cn                             # 语言设置
+    highlight: true                         # 突出显示
+    mathJax: false
+    tagMeta: [博主, 小伙伴, 访客]             # 标签要显示的文字,默认'博主,小伙伴,访客'
+    metaPlaceholder:
+      nick: "昵称/QQ号(必填)"
+      mail: "邮箱（必填，完全保密）"
+      link: "网址(https://)"
+    master: #md5加密后的博主邮箱
+      - 15DA06FAC47FCF3EF76063313E1EAFD7
+    friends: #md5加密后的小伙伴邮箱
+      - 
+
+######## 页脚带测试 ########
+
+footer:
+  social:
+    - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/08a41b181ce68.svg"/>'
+      url: https://github.com/Less-star
+    - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/3616429.svg"/>'
+      url: /photos
+    - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/cf1ae151f9e83.svg"/>'
+      url: /Music
+    - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/942ebbf1a4b91.svg"/>'
+      url: /about/#comments
+  license: '[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)'
+  source: # '[GitHub](https://github.com/xaoxuu/hexo-theme-stellar)'
+
+######## Tag Plugins ########
+
+tag_plugins:
+  note:
+    default_color: 'blue' 
+  # white, dark, red, orange, yellow, green, cyan, blue, purple
+  # 对应颜色：白色、深色、红色、橙色、黄色、绿色、青色、蓝色、紫色
+  # {% checkbox %}
+  checkbox:
+    interactive: false # 为用户启用交互式

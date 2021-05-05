@@ -1,0 +1,5 @@
+welcome:
+  layout: markdown
+  title: '欢迎，欢迎！'
+  content:
+    - '你好，我是少星，欢迎大家百忙之中来看我吐槽'

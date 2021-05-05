@@ -1,0 +1,73 @@
+# 十六进制配置
+## 文档：https://hexo.io/docs/configuration.html
+## 来源：https://github.com/hexojs/hexo/
+
+# 主题设置
+theme: stellar
+avatar: https://cdn.jsdelivr.net/gh/Less-star/image-host/Wallpaper/favicon.png
+
+# 网站信息∂
+title: 少星部落阁
+subtitle: 勿忘初心
+description: 七窍通了六窍——一窍不通
+author: 少 星
+email: 262782714@qq.com
+language: zh-CN
+
+metadata:
+  author_id: 少星
+  language: zh-CN
+
+# 网站logo
+inject:
+  head:
+    - <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/Less-star/image-host/Wallpaper/favicon.png">
+    - <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Less-star/image-host/Wallpaper/favicon.png">
+
+# 永久链接增强版-需要安装：npm install hexo-enhancer --save
+permalink: :abbrlink.html
+# permalink: :year/:abbrlink
+# permalink: posts/:abbrlink.html
+# permalink: :year/:month/:day/:abbrlink.html
+tags: 黑苹果, 安卓, Windows,软件,照片,壁纸,教程,导航,菜单,随笔,记录,尊享, # 自定义标签识别-hexo-enhancer
+
+# 分页设置
+# Pagination
+## 设置为 0 禁用分页
+per_page: 9
+pagination_dir: page
+
+# 网站URL
+url: https://shaoxing.netlify.app
+# 如果您的站点位于子目录中，请修改root：/子目录路径
+root: /
+
+# 自定义生成目录
+public_dir: docs
+
+pretty_urls:
+  trailing_index: false # 设置为false可从固定链接中删除尾随index.html
+
+
+# 音乐播放器-需要安装 npm install --save hexo-tag-aplayer
+aplayer:
+  meting: true
+
+# 一键部署github
+# 部署
+deploy:
+  type: git                                                   # 类型
+  repo: https://github.com/MuziShaoxing/shaoxing.git  # 仓库链接
+  branch: main                                           # 分支机构
+
+# RSS订阅-需要安装 hexo-generator-feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 100
+
+# hero-后台管理插件 npm install --save hexo-admin-zh-cn
+admin:
+  username: shaoxing
+  password_hash: $2a$10$7witK8E8nDWG.L8e7g4pS.qa/pvuhGqwCB2pajeTw87MAc79RPDtK
+  secret: my superrererhrthbfgsddfhfhjk,mgednmkredcvbnmuy5etwead,jliu6543rqel34wefgu4 secret phrase
