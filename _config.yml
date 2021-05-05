@@ -43,7 +43,7 @@ url: https://shaoxing.netlify.app
 root: /
 
 # 自定义生成目录
-public_dir: docs
+# public_dir: docs
 
 pretty_urls:
   trailing_index: false # 设置为false可从固定链接中删除尾随index.html
