@@ -1,9 +1,9 @@
 sidebar:
   menu:
-    博客: '[博客](/)'
-    相册: '[空间](/wiki/)'
-    便签: '[便笺](/notes/)'
-    更多: '[更多](/about/)'
+    post: '[博客](/)'
+    wiki: '[空间](/wiki/)'
+    friends: '[便笺](/notes/)'
+    about: '[更多](/about/)'
   # 侧边栏小工具
   widgets:
     # 主页/项目/类别/标签/归档页面中的默认布局
@@ -65,9 +65,9 @@ footer:
     - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/08a41b181ce68.svg"/>'
       url: https://github.com/Less-star
     - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/3616429.svg"/>'
-      url: /photos
+      url: /wiki/Photos
     - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/cf1ae151f9e83.svg"/>'
-      url: /Music
+      url: /wiki/Music
     - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/942ebbf1a4b91.svg"/>'
       url: /about/#comments
   license: '[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)'
@@ -83,3 +83,56 @@ tag_plugins:
   # {% checkbox %}
   checkbox:
     interactive: false # 为用户启用交互式
+
+# 插件
+######## JS Plugins ########
+plugins:
+  ## required plugins ##
+  # jquery
+  jquery: https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js
+
+  ## lazyload plugins ##
+  # fancybox
+  fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css
+  # swiper
+  swiper:
+    enable: true
+    css: https://unpkg.com/swiper/swiper-bundle.min.css
+    js: https://unpkg.com/swiper/swiper-bundle.min.js
+  # issues api
+  sitesjs: /js/plugins/sites.js
+  friendsjs: /js/plugins/friends.js
+
+  ## optional plugins ##
+  # preload
+  preload:
+    enable: false
+    service: flying_pages # instant_page, flying_pages
+    instant_page: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js
+    flying_pages: https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js
+
+  # image lazyload
+  # https://www.npmjs.com/package/vanilla-lazyload
+  lazyload:
+    enable: false # [hexo clean && hexo s] is required after changing this value.
+    js: https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js
+    transition: blur # blur, fade
+
+  # https://scrollrevealjs.org/api/reveal.html
+  scrollreveal:
+    enable: false
+    js: https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js
+    distance: 8px
+    duration: 500 # ms
+    interval: 100 # ms
+    scale: 1 # 0.1~1
+
+# 图片插件
+lightgallery:
+    plugins:
+      lg-thumbnail: /js/lg-thumbnail.js
+      lg-zoom: /js/lg-zoom.js
+      lg-autoplay: /js/lg-autoplay.js
+      lg-fullscreen: /js/lg-fullscreen.js
+      lg-pager: /js/lg-pager.js
+      lg-hash: /js/lg-hash.js

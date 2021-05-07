@@ -71,3 +71,14 @@ admin:
   username: shaoxing
   password_hash: $2a$10$7witK8E8nDWG.L8e7g4pS.qa/pvuhGqwCB2pajeTw87MAc79RPDtK
   secret: my superrererhrthbfgsddfhfhjk,mgednmkredcvbnmuy5etwead,jliu6543rqel34wefgu4 secret phrase
+
+# 图片插件
+lightgallery:
+    plugins:
+      lg-thumbnail: https://cdn.jsdelivr.net/gh/MuziShaoxing/Picture@main/Plug/gallery/js/lg-thumbnail.js
+      lg-zoom: https://cdn.jsdelivr.net/gh/MuziShaoxing/Picture@main/Plug/gallery/js/lg-zoom.js
+      lg-autoplay: https://cdn.jsdelivr.net/gh/MuziShaoxing/Picture@main/Plug/gallery/js/lg-autoplay.js
+      lg-fullscreen: https://cdn.jsdelivr.net/gh/MuziShaoxing/Picture@main/Plug/gallery/js/lg-fullscreen.js
+      lg-pager: https://cdn.jsdelivr.net/gh/MuziShaoxing/Picture@main/Plug/gallery/js/lg-pager.js
+      lg-hash: https://cdn.jsdelivr.net/gh/MuziShaoxing/Picture@main/Plug/gallery/js/lg-hash.js
+      # lg-vedio: https://cdn.jsdelivr.net/gh/MuziShaoxing/Picture@main/Plug/gallery/js/lg-vedio.js
