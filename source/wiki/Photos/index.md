@@ -2,8 +2,8 @@
 layout: wiki
 wiki: 摄影空间
 order: 0
-seo_title: 摄影空间
 title: 摄影空间
+seo_title: 摄影空间
 cover: true
 logo:
   src: https://cdn.jsdelivr.net/gh/Less-star/image-host/Wallpaper/1.png

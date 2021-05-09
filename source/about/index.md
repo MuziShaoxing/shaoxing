@@ -1,17 +1,9 @@
 ---
 robots: 'index,nofollow'
 menu_id: about
-seo_title: 关于
-sidebar: [welcome, toc]
-toc_title: 关于我
-comment_title: 来过，就留下您的脚印吧～
-comment_id: '留言板'
-comments: true
-breadcrumb: false
-header: false
 ---
-{% navbar [文章](/) [空间](/wiki/) [友链](/friends/) [留言](#comments) %}
 ![20210507-EIBPiG](https://cdn.jsdelivr.net/gh/MuziShaoxing/Picture@main/image/png/20210507-EIBPiG.png)
+{% navbar [文章](/) [空间](/wiki/) [友链](/friends/) [留言](#comments) %}
 
 ## 关于本站
 
