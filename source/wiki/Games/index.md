@@ -3,8 +3,8 @@ layout: wiki
 wiki: 游戏时刻
 order: 1
 seo_title: 游戏时刻
-title: 游戏时刻
 cover: true
+
 logo:
   src: https://cdn.jsdelivr.net/gh/MuziShaoxing/Picture@main/icon/game.png
 small: 
