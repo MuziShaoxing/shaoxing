@@ -38,7 +38,7 @@ per_page: 9
 pagination_dir: page
 
 # 网站URL
-url: https://shaoxing.netlify.app
+url: https://shaoxing.netlify.app # https://shaoxing.vercel.app
 # 如果您的站点位于子目录中，请修改root：/子目录路径
 root: /
 
