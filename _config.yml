@@ -56,18 +56,20 @@ aplayer:
 # 一键部署github
 # 部署
 deploy:
-  type: git                                                   # 类型
-  repo: https://github.com/MuziShaoxing/shaoxing.git  # 仓库链接
-  branch: main                                           # 分支机构
-
+  type: git
+  repo: https://github.com/Less-star/less-star.github.io.git
+  # example, https://less-star.github.io/
+  branch: gh-pages
 # RSS订阅-需要安装 hexo-generator-feed
 feed:
   type: atom
   path: atom.xml
   limit: 100
 
-# hero-后台管理插件 npm install --save hexo-admin-zh-cn
+# Admin
 admin:
-  username: shaoxing
-  password_hash: $2a$10$7witK8E8nDWG.L8e7g4pS.qa/pvuhGqwCB2pajeTw87MAc79RPDtK
-  secret: my superrererhrthbfgsddfhfhjk,mgednmkredcvbnmuy5etwead,jliu6543rqel34wefgu4 secret phrase
+    name: shaoxing
+    password: ainiyibeizi
+    secret: hey ainiyibeizi
+    expire: 60*1
+    cors: http://localhost:3000

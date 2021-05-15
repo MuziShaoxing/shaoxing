@@ -1,7 +1,7 @@
 ---
 robots: noindex,nofollow
 sitemap: false
-menu_id: notes
+menu_id: friends
 layout: wiki
 wiki: Notes
 ---
