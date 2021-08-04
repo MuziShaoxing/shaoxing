@@ -7,35 +7,35 @@ title: BigSur安装教程
 
 
 
-——本文章改编与[《黑果小兵部落阁》](https://blog.daliansky.net/Lenovo-Tianyi-510s-Mini-and-macOS-BigSur-Installation-Tutorial.html) 天逸510s Mini兼macOS BigSur安装教程
+——本文章改编与[《黑果小兵部落阁》](https://blog.daliansky.net)   [天逸510s Mini兼macOS BigSur](https://blog.daliansky.net/Lenovo-Tianyi-510s-Mini-and-macOS-BigSur-Installation-Tutorial.html)安装教程
 
 ### 软件准备
 
 #### 操作系统：
 
-一个可以制作安装U盘的操作系统，包括但不限于  macOS  /  Windows  /  Linux等
+一个可以制作安装U盘的操作系统，包括但不限于**macOS** / **Windows** / ****Linux**** 等
 
 比如：
 
-- 运行  macOS  的苹果电脑；
-- 运行  Windows  或者  PE  的电脑；
-- 基于  Live CD  模式运行的  Linux  系统等等；
+- 运行  **macOS**  的苹果电脑；
+- 运行  **Windows**  或者  **PE**  的电脑；
+- 基于  **Live CD**  模式运行的  ****Linux****  系统等等；
 
 #### 软件或者用到的工具：
 
-##### md5检查器：
+##### md5检查器：**Windows**
 
-- Windows:
+- **Windows**:
   - [WinMD5](https://www.winmd5.com/)
-- macOS或者Linux自带：
+- **macOS**或者**Linux**自带：
   -   md5   for macOS
-  -   md5sum   for linux
+  -   md5sum   for Linux
 
 ##### 磁盘分区工具
 
-- Windows:
+- **Windows**:
   - [Disk Genuis](https://www.diskgenius.cn/)
-- macOS或者Linux：
+- **macOS**或者**Linux**：
   - 略
 
 ##### U盘制作工具
@@ -52,13 +52,13 @@ title: BigSur安装教程
 
 ##### 校验  md5  值
 
--   Windows  环境：
+-   **Windows**  环境：
 
   利用刚才下载的[WinMD5](https://www.winmd5.com/)检查md5值是否正确，如果md5值不相同**必须重新下载安装镜像，不要心存侥幸**
 
   ![WinMD5](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/WinMD5.png)
 
--   macOS  环境：
+-   **macOS**  环境：
 
     ```
   # md5 macOS\ Big\ Sur\ 11.1\ 20C69\ Installer\ for\ CLOVER\ 5127\ and\ WEPE.dmg
@@ -105,7 +105,7 @@ title: BigSur安装教程
     -   配置SATA为   ->   AHCI  
 - 其它参数默认即可
 
-### 安装  macOS Big Sur  
+### 安装  **macOS** Big Sur  
 
 开机，按  F12  选择U盘引导，光标移动到  EFI USB Device  选择  OpenCore  分区启动：
 
@@ -289,7 +289,7 @@ sudo kcditto
 
 #### 工具篇
 
-目的是脱离U盘引导使用macOS，所以它是最优先需要执行的动作
+目的是脱离U盘引导使用**macOS**，所以它是最优先需要执行的动作
 
 最简单的方法：使用工具  Hackintool  ,如图所示：
 
@@ -306,7 +306,7 @@ sudo kcditto
 diskutil list
   ```
 
-/dev/disk0(internal, physical):
+> */dev/disk0(internal, physical):*
 
 | #:   |                  TYPE | NAME            | SIZE     | IDENTIFIER |
 | :--- | --------------------: | :-------------- | :------- | :--------- |
@@ -315,7 +315,7 @@ diskutil list
 | 2:   |            Apple_APFS | Container disk1 | 128 GB   | disk0s2    |
 | 3:   |  Microsoft Basic Data | WIN10           | 127.7 GB | disk0s3    |
 
-/dev/disk2(external, physical):
+> */dev/disk2(external, physical):*
 
 | #:   |                  TYPE | NAME                  | SIZE    | IDENTIFIER |
 | :--- | --------------------: | :-------------------- | :------ | :--------- |
@@ -437,7 +437,7 @@ open .
 
 ###### 使用 AirportItlwm
 
-- 首先，确保你的 macOS 版本 >= 10.15，此教程只涵盖 OpenCore 引导。
+- 首先，确保你的 **macOS** 版本 >= 10.15，此教程只涵盖 OpenCore 引导。
 - 移除   itlwm   和   HeliPort   并进入  系统偏好设置 - 网络 - Wi-Fi   打开   在菜单栏中显示 Wi-Fi 状态  。
 - 然后，解压下载的包并拷贝   AirportItlwm.kext   到   /EFI/CLOVER/kexts/Other   或者   /EFI/OC/Kexts/  。
 
@@ -478,7 +478,7 @@ open .
 </dict>
   ```
 
-- 同时，修改   SecureBootModel   来允许加载 immutablekernel。如果您的 macOS 版本 >= macOS11 (KernelCollection)，就不需要做以下步骤：
+- 同时，修改   SecureBootModel   来允许加载 immutablekernel。如果您的 **macOS** 版本 >= **macOS**11 (KernelCollection)，就不需要做以下步骤：
 
   ```
 	<key>DmgLoading</key>
@@ -518,7 +518,7 @@ open .
 </array>
   ```
 
-- 如果你是 macOS10.13 用户，你还需要强制加载   corecapture.kext  。在   IO80211Family.kext   条目前添加以下代码：
+- 如果你是 **macOS**10.13 用户，你还需要强制加载   corecapture.kext  。在   IO80211Family.kext   条目前添加以下代码：
 
   ```
 <dict>
