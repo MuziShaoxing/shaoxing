@@ -51,9 +51,9 @@ date: 2021-05-05 06:14:25
 {% image  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Wi-Fi-ait.png Wi-Fi高级参数 download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Wi-Fi-ait.png %}
 {% image  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/蓝牙-设备扫描.png 蓝牙功能正常 download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/蓝牙-设备扫描.png %}
 {% image  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/鼠标.png 自定义白果鼠标设置 download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/鼠标.png %}
-{% image  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/App Store.png 应用商店登陆 download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/App Store.png %}
+{% image  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/App_Store.png 应用商店登陆 download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/App_Store.png %}
 {% image  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/hackintool.png hackintool download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/hackintool.png %}
 {% image  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/iMessage信息.png iMessage信息功能测试 download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/iMessage信息.png %}
-{% image  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Intel Power Gadget.png 运行心电图？ download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Intel Power Gadget.png %}
+{% image  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Intel_Power_Gadget.png 运行心电图？ download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Intel_Power_Gadget.png %}
 {% image  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/VideoProc-硬件加速.png 开启显卡硬件解码 download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/VideoProc-硬件加速.png %}
 {% image  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/CPU.png CPU变频特效 download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/CPU.png %}
