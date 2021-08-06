@@ -3,6 +3,8 @@ title: 关于macOS Monterey升级异常汇总
 tags: []
 categories: []
 date: 2021-06-08 15:04:00
+cover: >-
+    https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/yNBSGb.png
 ---
 
 - 北京时间凌晨1点 Apple在WWDC上发布了macOS Monterey

@@ -1,0 +1,43 @@
+Hackintool:
+  title: Hackintool
+  subtitle: 黑苹果教程合集
+  tags: 
+  cover: true
+  logo:
+    src: https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/avatar.png
+    small: 112px
+    large: 240px
+  description: 此文档由本站在黑苹果安装过程中收集，测试，改编而成。所属资料版权归属原作者。
+
+图片空间:
+  title: 图片空间
+  subtitle: 图片欣赏
+  tags: 
+  cover: true
+  logo:
+    src: https://cdn.jsdelivr.net/gh/Less-star/image-host/Wallpaper/1.png
+    small: 112px
+    large: 240px
+  description: 欢迎来到我的相册。
+
+游戏时刻:
+  title: 游戏时刻
+  subtitle: 游戏精彩剪辑
+  tags: 
+  cover: true
+  logo:
+    src: https://cdn.jsdelivr.net/gh/MuziShaoxing/Picture@main/icon/game.png
+    small: 112px
+    large: 240px
+  description: 欢迎来到我的游戏世界。
+
+影音时空:
+  title: 影音时空
+  subtitle: 我喜欢听的音乐与歌手
+  tags: 
+  cover: true
+  logo:
+    src: https://cdn.jsdelivr.net/gh/Less-star/image-host/Wallpaper/844-1F505092500.png
+    small: 112px
+    large: 240px
+  description: 欢迎来到我的影音时空。

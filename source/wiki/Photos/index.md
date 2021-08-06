@@ -1,15 +1,8 @@
 ---
 layout: wiki
-wiki: 摄影空间
-order: 0
-title: 摄影空间
-seo_title: 摄影空间
-cover: true
-logo:
-  src: https://cdn.jsdelivr.net/gh/Less-star/image-host/Wallpaper/1.png
-  small: 
-  large: 
-description: 欢迎来到我的摄影空间
+wiki: 图片空间
+title: 阅读须知
+order: 1
 ---
 {% image https://cdn.jsdelivr.net/gh/Less-star/image-host/Wallpaper/2222.png 请注意当前网络环境，此处多图预警。 download:https://cdn.jsdelivr.net/gh/Less-star/image-host/Wallpaper/2222.png
  %}

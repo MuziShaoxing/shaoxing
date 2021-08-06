@@ -1,20 +1,8 @@
 ---
 layout: wiki
 wiki: Hackintool
-order: 1
-seo_title: 黑果小六
 title: 黑苹果 （操作系统）
-cover: true
-logo:
-  src: https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/avatar.png
-small: 
-  large: 
-description: 此文档由本站在黑苹果安装过程中收集，测试，改编而成。所属资料版权归属原作者。
-
 ---
-
-
-
 
 > **版权©️声明 : 此页出自 百度百科 [黑苹果 （操作系统）](https://baike.baidu.com/item/黑苹果/5220943?fr=aladdin)**
 

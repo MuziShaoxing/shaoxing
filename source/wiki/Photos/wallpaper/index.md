@@ -1,5 +1,5 @@
 layout: wiki
-wiki: 摄影空间
+wiki: 图片空间
 order: 3
 title: 那些年用过的壁纸
 date: 2021-05-05 06:14:25

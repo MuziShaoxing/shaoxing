@@ -6,8 +6,9 @@ title: BigSur安装教程
 ---
 
 
+> **版权©️声明 : 本文章改编与[《黑果小兵部落阁》](https://blog.daliansky.net)   [天逸510s Mini兼macOS BigSur](https://blog.daliansky.net/Lenovo-Tianyi-510s-Mini-and-macOS-BigSur-Installation-Tutorial.html)安装教程**
 
-——本文章改编与[《黑果小兵部落阁》](https://blog.daliansky.net)   [天逸510s Mini兼macOS BigSur](https://blog.daliansky.net/Lenovo-Tianyi-510s-Mini-and-macOS-BigSur-Installation-Tutorial.html)安装教程
+------------
 
 ### 软件准备
 
