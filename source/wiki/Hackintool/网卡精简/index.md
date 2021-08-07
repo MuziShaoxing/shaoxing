@@ -1,0 +1,76 @@
+
+---
+layout: wiki
+wiki: Hackintool
+title: 黑苹果intel网卡进阶教程——驱动精简
+order: 800
+---
+## 简叙
+- 本教程为进阶操作，小白请绕行
+- 教程目的：精简Wi-Fi驱动容量
+- 版权©️声明 : 此页出自<本站>作者制作记录而成。
+- 诚挚@感谢 : win1010525 提供视频教学[黑苹果intel网卡进阶教程](https://www.bilibili.com/video/BV1RA411A7se) 
+
+注意：执行前提，你需要首先成功驱动网卡，方可以使软件识别网卡**IOModel值**！
+
+## 准备工具
+**ioreg**： https://pan.bilnn.com/s/bqA9hO
+**Xcode**：https://apps.apple.com/cn/app/xcode/id497799835?mt=12
+**GitHub Desktop** ： https://desktop.github.com
+
+## 下载源码
+###  {% kbd MacKernelSDK %} 源码
+- 访问网页: https://github.com/acidanthera/MacKernelSDK
+{% folding 折叠区 %}
+{% image https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/YlLZdp.png 选择绿色 {% kbd code %} 再选择 {% kbd Open with GitHub Desktop %}  %}
+{% image https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/PSyAWG.png 点击 {% kbd 打开 %} 可选: 勾选 {% kbd 始终允许 github.com 在关联的应用中打开此类链接 %}  %}
+{% image https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/LsVzpl.png 弹出应用程序中点击 {% kbd clone %} clone源码 %}
+{% image https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/lpSgXo.png 坐等下载成功。。。 %}
+{% endfolding %}
+
+###  {% kbd itlwm %} 源码
+访问网页:https://github.com/OpenIntelWireless/itlwm
+- 操作方式: 同上（略）
+
+## 教程正式开始
+### 前置条件
+注：看到这里，请确保你已成功下载预装**ioreg**，**Xcode**，**GitHub Desktop**。并clone好 {% kbd  MacKernelSDK %} 和 {% kbd itlwm %} 源码
+
+### 查询网卡IOModel
+ 打开 ioreg右上角搜索 {% kbd itlwm %} ，然后点击左侧的 {% kbd Airportltwm %}  在右侧寻找IOModel 把值记下来（如图）
+![nIBqnV](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/nIBqnV.png)
+重点提醒，此参数请记录。
+
+### 拉取请求 
+{% image https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/rmZuMK.png 打开GitHub应用itlwm仓库，选择 “Current Branch master ”再选择 “ Pull Requests ” 拉取请求，点击第二个 “ Add Airportltlwm support for  ” 等待拉取回执。 %}
+{% image https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/05BqCh.png 拉取成功 %}
+
+### 文件目录调整
+注:GitHub默认本地路径为
+> /Users/用户名/文稿/GitHub
+
+终端前往:
+{% copy curl -s open /Users/*/Documents/GitHub | sh %}
+
+
+
+{% image https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/xNCvpi.png 找到GitHub目录，将 “MacKernelSDK ” 移动至“itlwm ” 文件夹下。%}
+{% image https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/xqCcsB.png 如图 %}
+{% image https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/b6Mscz.png 查看 “/GitHub/itlwm/itlwm/firmware ” 文件夹下找到刚才查询到的“IOModel”值对应的文件，并删除其他文件 %}
+{% image https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/CVDjdU.png 找到 “/GitHub/itlwm/include” 文件夹查看是否有“FwBinary.cpp”文件<如有删掉> %}
+{% image https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/WQZmC6.png 完成上述后，使用xcode打开“itlwm.xcodeproj ” 文件编译 %}
+{% image https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/zt23Qm.png 依次点选并编译，查看右侧进度条，等待完成。 %}
+{% image https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Ob6Mjt.png Xcode默认输出目录 %}
+
+### 提取成果
+终端输入以下代码直接打开默认编译驱动目录。
+{% copy curl -s open /Users/*/Library/Developer/Xcode/DerivedData/itlwm-ezqsmvxdqasykcckxyqzmxymhvto/Build/Products/Debug | sh %}
+![YTc3VJ](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/YTc3VJ.png)
+
+### 成品效果
+![D5mOOV](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/D5mOOV.png)
+
+### 为什么要这样搞？
+1. 精简驱动容量
+2. 开机可以加速一丢丢。
+3. 驱动精简后，非同型号网卡，不可使用。

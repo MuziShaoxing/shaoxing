@@ -1,9 +1,9 @@
 sidebar:
   menu:
     post: '[博客](/)'
-    wiki: '[空间](/wiki/)'
+    wiki: '[项目](/wiki/)'
     friends: '[便笺](/notes/)'
-    about: '[更多](/about/)'
+    about: '[友联](/friends/)'
   # 侧边栏小工具
   widgets:
     # 主页/项目/类别/标签/归档页面中的默认布局
@@ -67,9 +67,9 @@ footer:
     - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/3616429.svg"/>'
       url: /wiki/Photos
     - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/cf1ae151f9e83.svg"/>'
-      url: /wiki/Music
+      url: /wiki/player/Music
     - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/942ebbf1a4b91.svg"/>'
-      url: /about/#comments
+      url: http://wpa.qq.com/msgrd?v=3&uin=262782714
   license: '[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)'
   source: # '[GitHub](https://github.com/xaoxuu/hexo-theme-stellar)'
 
