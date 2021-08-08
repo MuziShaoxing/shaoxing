@@ -40,7 +40,7 @@ comments:
     appId: RiAUrbaCwE6vUfnRAu1bLoN2-gzGzoHsz # 账号
     appKey: aHSy9hrs4ywfy5iBrAlB0XP8         # 密码
     placeholder: 踏雪怎无痕？少侠，请留下你的观点！
-    requiredFields: [nick, mail]
+    requiredFields: [nick]
     enableQQ: true                          # 不稳定的头像链接
     recordIP: true                          # 记录评论ip
     avatar: mp                              # 头像参考 https://valine.js.org/avatar
@@ -51,7 +51,7 @@ comments:
     tagMeta: [博主, 小伙伴, 访客]             # 标签要显示的文字,默认'博主,小伙伴,访客'
     metaPlaceholder:
       nick: "昵称/QQ号(必填)"
-      mail: "邮箱（必填，完全保密）"
+      mail: "邮箱（如需得到我的追踪，请填写）"
       link: "网址(https://)"
     master: md5加密后的博主邮箱
       - c47fcf3ef7606331

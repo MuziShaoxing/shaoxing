@@ -22,6 +22,7 @@ Hackintool:
 
 影音时空:
   title: 影音时空
+  index: false
   subtitle: 我的多媒体播放空间
   tags: 
   cover: true
