@@ -1,0 +1,126 @@
+## 如何安装双系统
+### Mac系统安装Windows
+- 启动转换助理安装Windows:[苹果官网](https://support.apple.com/zh-cn/guide/bootcamp-assistant/toc/mac) 
+### Windows系统下安装Mac
+1. 前往黑果小兵部落阁下载黑苹果镜像
+2. 下载完成后，使用balenaEtcher选择下载好的DMG镜像写入U盘。
+3. 转换本地磁盘分区表为GUID，手动分区EFI分区200M+
+ - 如需替换EFI请手动替换至U盘或磁盘EFI目录均可。
+4. 重启进入BIOS界面，修改对应BIOS参数（详见黑果小兵部落阁）
+PS：请使用USB2.0接口或U盘能降低出错几率。。。
+5. 重启选择USB启动，找出OpenCore/CLOVER引导项进Recovery模式，
+6. 打开磁盘管理抹盘Mac扩展日志/APFS格式
+7. 退出磁盘管理开始安装，等待进度条结束。。。
+PS：上述过程可能会出错，相关错误信息有科技大佬博主在维护，我就一一列举了
+8. 详细教程请查看[Mac安装教程](https://hackintool.vercel.app/2/index.html)
+
+## 安装后引导设置
+### 如何将EFI文件复制到硬盘ESP分区
+{% folding Mac系统下 %}
+- 使用[OpenCore Configurator](https://macwk.com/soft/opencore-configurator)
+  - 打开**OpenCore Configurator**后桌面点击右上角图标，挂载分区，输入密码，打开分区即可
+  - 复制准备好的EFI文件，粘贴到EFI分区内
+  ![Ok60mY](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Ok60mY.jpg)
+- 使用终端
+  - 终端输入以下代码，查找分区IDENTIFIER值
+  {% copy diskutil list %}
+  - 你会得到以下磁盘信息，从中截取EFI分区后面IDENTIFIER值为“disk0s1”
+  ![OENxNL](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/OENxNL.png)
+  - 则你的挂载EFI分区的代码便是{% kbd sudo diskutil mount disk0s1 %} 
+  - 终端输入结果即可挂载
+  - 复制粘贴即可
+
+{% endfolding %}
+
+{% folding Windows系统下（同PE) %}
+Windows环境无法原生挂载EFI分区，需要借助软件写入EFI分区内容
+![37kfhO](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/37kfhO.jpg)
+- 单EFI分区双系统：打开EFI文件夹将OC文件夹拖入进去
+- 多EFI分区双系统：找到对应EFI分区将整个EFI文件夹拖进去
+{% endfolding %}
+
+### 引导启动项添加（仅单磁盘双系统需要）
+{% folding Windows使用DiskGenius %}
+- 方案一: 使用DiskGenius
+  - 打开DiskGenius-工具-设置UEFI BIOS启动项（如果没有请更新软件版本）
+  - ![nn2E68](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/nn2E68.jpg)
+  - 点击添加，选择刚才复制的EFI分区中目录EFI-OC-OPENCORE.EFI双击即可添加
+  - ![FfJskW](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/FfJskW.jpg)
+  - 选择保存启动项设置，并勾选下次启动进入BIOS，在BIOS启动序列中将OC设置为第一启动项即可（启动项名称可自定义）
+  {% endfolding %}
+
+{% folding Mac系统借助OpenCore Configurator %}
+Mac OS环境：
+
+注：详细看完再操作，优缺点很明显
+
+Mac环境下无法设置底层UEFI启动参数，我这里推荐各位单EFI分区的朋友使用以下操作，使用OpenCore 引导Windows，方便快捷！
+（多磁盘/EFI分区用户请参考Windows版设置）
+- 挂载EFI分区
+- 首先将EFI目录下的windows引导Microsoft文件夹移动到OC文件夹下
+- 使用OpenCore Configurator打开config.plist选择下图路径设置自定义启动项
+- 关机重启即可
+{% folding 图示 %}
+![Vqvfre](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Vqvfre.jpg)
+- 注：可能出现引导Windows蓝屏
+- 升级Windows可能导致进不去系统。。
+- 优点是，重置nvram不会丢失启动项
+{% endfolding %}
+{% endfolding %} 
+
+## 双系统常见故障修复
+{% folding OpenCore引导Windows蓝屏报错 %}
+以下仅收录常见蓝屏报错，
+- 笔记本
+  - 尽可能减少SSDT补丁使用
+  - 当笔记本使用SSDT-PNLF-SKL或KBL.aml补丁时增加重命名
+```
+查找  504E4C46   替换  584E4C46  注释 PNLF to XNLF
+```
+
+- 台式机
+  - 勾选Booter-Quirks-{% kbd SyncRuntimePermissions %}
+  - ![OX6rak](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/OX6rak.png)
+
+
+{% endfolding %}
+
+{% folding OpenCore引导Windows掉激活 %}
+OpenCore引导Windows导致激活Windows失败报错，通常与UUID有关，
+解决办法:
+- 模拟机型处填写Windows下通过以下命令获取的Windows系统UUID：
+1. 使用Windows原生引导启动Windows，
+2. 使用管理员身份打开Windows PowerShell依次输入以下代码：
+``` 
+wmic csproduct 或 csproduct list full
+``` 
+你会获得以下内容，取其中UUID填到配置表内即可。
+``` 
+PS C:\Windows\system32> wmicwmic:root\cli>csproductCaption         Description     IdentifyingNumber  Name            SKUNumber  UUID                                  Vendor       Version计算机系统产品  计算机系统产品  C02R6EZ5****       ENVY NOTEBOOK 13             88888888-8888-8888-8888-888888888888  Acidanthera  1.0
+``` 
+{% endfolding %}
+
+{% folding Windows关机不断电 %}
+Windows关机不断电：关闭Windows快速启动，
+1. 资源管理器地址栏输入{% u “控制面板\硬件和声音\电源选项\” %}弹出窗口左侧“{% kbd 选择电源按钮功能 %}”
+![c7nznF](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/c7nznF.jpg)
+{% endfolding %} 
+
+{% folding 双系统时间不同步 %}
+解决这个问题的方法很简单:修改**Windows**对硬件时间的对待方式，这样只在**Windows**上修改后就无需 在**mac**上设置了。让 **Windows**把硬件时间当作 UTC
+- 方案一 
+  - window7用户开始->运行->输入CMD 
+  - window8/10用户WIN+x选择管理员模式进入CMD 输入下面命令并回车代码:
+{% copy Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1   %} 
+- 方案二
+  - 下载[WinUTCOn.reg](https://pan.bilnn.com/s/6aWEfL)双击运行
+{% endfolding %}
+
+{% folding OpenCore引导找不到Mac/Windows启动项 %}
+- 单磁盘双系统如OpenCore中无法找到Windows启动项，请更改配置表：
+{% u MISC-Security- %}{% kbd Scan Policy %}参数为“0”“注是零不是字母O”详见下图
+![ef9IpC](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/ef9IpC.jpg)
+
+- 双硬盘双系统如OpenCore中无法找到Windows启动项，除核对上述内容外，仍需检查Windows磁盘分区表是否是MBR格式，如是需修正（转换）分区表为GUID格式
+
+{% endfolding %}
