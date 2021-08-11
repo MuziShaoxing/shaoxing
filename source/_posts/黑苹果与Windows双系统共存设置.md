@@ -1,3 +1,10 @@
+
+---
+title: 黑苹果与Windows双系统共存设置
+cover: >-
+    https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/2-深林里的小鹿.png
+dark: true
+---
 ## 如何安装双系统
 ### Mac系统安装Windows
 - 启动转换助理安装Windows:[苹果官网](https://support.apple.com/zh-cn/guide/bootcamp-assistant/toc/mac) 
