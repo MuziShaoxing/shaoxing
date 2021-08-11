@@ -1,7 +1,10 @@
-
+---
+cover: >
+    https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/jp.jpeg
+dark: true
+---
 > 版权©️声明 : 本页出自[Apple支持「Mac 键盘快捷键」](https://support.apple.com/zh-cn/HT201236)适配Windows键盘改写。
 
-------------
 - 您可以按下某些组合键来实现通常需要鼠标、触控板或其他输入设备才能完成的操作。
 - 要使用键盘快捷键，请按住一个或多个修饰键，然后按快捷键的最后一个键。
   - 例如，要使用 Win-C（拷贝），请按住 Win 键并按 C 键，然后同时松开这两个键。
