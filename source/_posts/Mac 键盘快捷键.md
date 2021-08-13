@@ -1,7 +1,9 @@
 ---
-cover: >
-    https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/jp.jpeg
+title: Mac键盘快捷键
+cover: |
+  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/jp.jpeg
 dark: true
+abbrlink: 814a1e
 ---
 > 版权©️声明 : 本页出自[Apple支持「Mac 键盘快捷键」](https://support.apple.com/zh-cn/HT201236)适配Windows键盘改写。
 
@@ -45,7 +47,7 @@ dark: true
   - **Win-Tab**：在多个打开的 App 之间切换到下一个最近使用的 App。 
   - **Shift-Win-5**：在 [macOS Mojave 或更高版本](https://support.apple.com/zh-cn/HT201260)中，拍摄截屏或录制屏幕。也可以使用 Shift-Win-3 或 Shift-Win-4 来拍摄截屏。[进一步了解截屏](https://support.apple.com/zh-cn/HT201361)。
   - **Shift-Win-N**：在“访达”中创建一个新文件夹。
-  - **Win-逗号 (,)**：打开最前面的应用的偏好设置。
+  - **Win-逗号（，）**：打开最前面的应用的偏好设置。
 
   ![img](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/mac_apps/itunes/divider.png)
 
@@ -92,7 +94,7 @@ dark: true
   - **Ctrl-Win-T**：将所选项添加到边栏（OS X Mavericks 或更高版本）。
   - **Alt-Win-P**：隐藏或显示“访达”窗口中的路径栏。
   - **Alt-Win-S**：隐藏或显示“访达”窗口中的边栏。
-  - **Win–斜线(/)**：隐藏或显示“访达”窗口中的状态栏。
+  - **Win–斜线（/）**：隐藏或显示“访达”窗口中的状态栏。
   - **Win-J**：显示“显示”选项。
   - **Win-K**：打开“连接服务器”窗口。
   - **Ctrl-Win-A**：为所选项制作替身。
@@ -107,8 +109,8 @@ dark: true
   - **Win-2**：以列表方式显示“访达”窗口中的项目。
   - **Win-3**：以分栏方式显示“访达”窗口中的项目。 
   - **Win-4**：以画廊方式显示“访达”窗口中的项目。
-  - **Win–左中括号 ([)**：前往上一文件夹。
-  - **Win–右中括号 (])**：前往下一个文件夹。
+  - **Win–左中括号 ([）**：前往上一文件夹。
+  - **Win–右中括号 (]）**：前往下一个文件夹。
   - **Win–上箭头**：打开包含当前文件夹的文件夹。
   - **Win–Ctrl–上箭头**：在新窗口中打开包含当前文件夹的文件夹。
   - **Win–下箭头**：打开所选项。
@@ -151,8 +153,8 @@ dark: true
   - **Win-T**：显示或隐藏“字体”窗口。
   - **Win-D**：从“打开”对话框或“存储”对话框内选择“桌面”文件夹。
   - **Ctrl-Win-D**：显示或隐藏所选字词的定义。
-  - **Shift-Win–冒号( : )**：显示“拼写和语法”窗口。
-  - **Win–分号( ; )**：查找文稿中拼写错误的字词。
+  - **Shift-Win–冒号（:）**：显示“拼写和语法”窗口。
+  - **Win–分号（;）**：查找文稿中拼写错误的字词。
   - **Alt-Delete**：删除插入点左边的字词。
   - **Ctrl-H**：删除插入点左边的字符。也可以使用 Delete 键。
   - **Ctrl-D**：删除插入点右边的字符。也可以使用 Fn-Delete。
@@ -189,9 +191,9 @@ dark: true
   - **Ctrl–N**：下移一行。
   - **Ctrl–O**：在插入点后新插入一行。
   - **Ctrl–T**：将插入点后面的字符与插入点前面的字符交换。
-  - **Win–左花括号({)**：左对齐。
-  - **Win–右花括号(})**：右对齐。
-  - **Shift-Win–竖线(|)**：居中对齐。
+  - **Win–左花括号（{）**：左对齐。
+  - **Win–右花括号（}）**：右对齐。
+  - **Shift-Win–竖线（|）**：居中对齐。
   - **Alt-Win-F**：前往搜索栏。 
   - **Alt-Win-T**：显示或隐藏应用中的工具栏。
   - **Alt-Win-C**：拷贝样式：将所选项的格式设置拷贝到剪贴板。
@@ -200,9 +202,9 @@ dark: true
   - **Alt-Win-I**：显示或隐藏检查器窗口。
   - **Shift-Win-P**：页面设置：显示用于选择文稿设置的窗口。
   - **Shift-Win-S**：显示“存储为”对话框或复制当前文稿。
-  - **Shift-Win-减号(-)**：缩小所选项。
-  - **Shift-Win-加号(+)**：放大所选项。Win–等号 (=) 可实现相同的功能。
-  - **Shift-Win–问号(?)**：打开“帮助”菜单。
+  - **Shift-Win-减号（-）**：缩小所选项。
+  - **Shift-Win-加号（+）**：放大所选项。Win–等号 (=) 可实现相同的功能。
+  - **Shift-Win–问号（?）**：打开“帮助”菜单。
 
   ![img](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/mac_apps/itunes/divider.png)
 

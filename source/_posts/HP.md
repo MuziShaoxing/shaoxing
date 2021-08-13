@@ -3,7 +3,7 @@ title: HP_ENVY_13_D025笔记本
 categories:
   - 黑苹果
 cover: >-
-    https://cdn.jsdelivr.net/gh/MuziShaoxing/Picture@main/image/png/20210507-Xcx1LX.png
+  https://cdn.jsdelivr.net/gh/MuziShaoxing/Picture@main/image/png/20210507-Xcx1LX.png
 dark: true
 tags:
   - 软件
@@ -13,6 +13,7 @@ tags:
 author: 少星
 author_id: muzishaoxing
 language: 中文
+abbrlink: c128ce6e
 date: 2021-04-21 20:45:00
 ---
 ## 系统检测
