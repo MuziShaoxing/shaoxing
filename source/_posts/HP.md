@@ -1,18 +1,12 @@
 ---
 title: HP_ENVY_13_D025笔记本
-categories:
-  - 黑苹果
 cover: >-
   https://cdn.jsdelivr.net/gh/MuziShaoxing/Picture@main/image/png/20210507-Xcx1LX.png
 dark: true
 tags:
-  - 软件
-  - 黑苹果
-  - Windows
-  - 教程
-author: 少星
-author_id: muzishaoxing
-language: 中文
+  - 笔记本
+categories:
+  - 记录
 abbrlink: c128ce6e
 date: 2021-04-21 20:45:00
 ---

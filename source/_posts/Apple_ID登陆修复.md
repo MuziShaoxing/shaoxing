@@ -1,6 +1,10 @@
 ---
 title: Apple_ID登陆修复
 abbrlink: ca810459
+tags:
+  - 修复
+categories:
+  - 黑苹果教程
 ---
 ## 故障描述
 黑苹果后登陆apple id提示：

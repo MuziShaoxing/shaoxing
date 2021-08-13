@@ -2,6 +2,10 @@
 title: 黑苹果与Windows双系统共存设置
 cover: 'https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/2-深林里的小鹿.png'
 dark: true
+tags:
+  - 双系统
+categories:
+  - 黑苹果教程
 abbrlink: 6629381b
 ---
 
