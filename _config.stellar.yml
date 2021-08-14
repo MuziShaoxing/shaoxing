@@ -3,7 +3,7 @@ sidebar:
     post: '[博客](/)'
     wiki: '[项目](/wiki/)'
     friends: '[便笺](/notes/)'
-    about: '[友联](/friends/)'
+    about: '[友联](/about/)'
   # 侧边栏小工具
   widgets:
     # 主页/项目/类别/标签/归档页面中的默认布局
@@ -83,8 +83,3 @@ tag_plugins:
   # {% checkbox %}
   checkbox:
     interactive: false # 为用户启用交互式
-
-
-open_graph:
-  enable: true
-  twitter_id: 

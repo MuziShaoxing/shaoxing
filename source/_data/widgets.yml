@@ -1,5 +1,5 @@
 welcome:
   layout: markdown
-  title: '欢迎，欢迎！'
+  title: '每日一言'
   content:
-    - '你好，我是少星，欢迎大家百忙之中来欣赏我的作品'
+    - '<script type="text/javascript" src="https://api.xygeng.cn/one/get/"></script>'

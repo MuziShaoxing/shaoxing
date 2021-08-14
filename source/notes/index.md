@@ -1,8 +1,7 @@
 ---
-robots: noindex,nofollow
-sitemap: false
 menu_id: friends
 ---
+
 
 {% image  https://cdn.jsdelivr.net/gh/MuziShaoxing/Picture@main/image/png/20210507-9AVwOv.png 猫和老鼠 download:true %}
 

@@ -66,5 +66,3 @@ admin:
     secret: hey ainiyibeizi
     expire: 60*1
     cors: http://localhost:3000
-
-wiki_dir: wiki
