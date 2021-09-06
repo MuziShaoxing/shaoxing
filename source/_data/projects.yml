@@ -20,14 +20,26 @@ Hackintool:
     large: 240px
   description: 欢迎来到我的相册。
 
-影音时空:
-  title: 影音时空
+保险:
+  title: 保险
   index: false
-  subtitle: 我的多媒体播放空间
+  subtitle: 保险
   tags: 
   cover: true
   logo:
     src: https://cdn.jsdelivr.net/gh/Less-star/image-host/Wallpaper/844-1F505092500.png
     small: 112px
     large: 240px
-  description: 欢迎来到我的影音时空。
+  description: 保险
+
+影音时空:
+  title: 影音时空
+  index: false
+  subtitle: 首页
+  tags: 
+  cover: true
+  logo:
+    src: https://cdn.jsdelivr.net/gh/Less-star/image-host/Wallpaper/844-1F505092500.png
+    small: 112px
+    large: 240px
+  description: 欢迎来到我的相册。
