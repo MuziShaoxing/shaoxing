@@ -31,8 +31,7 @@ date: 2021-05-05 06:14:25
 
 ## 功能驱动展示
 
-{% image  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/MacBookAir.png macboot Ait download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/MacBookAir.png %}
-{% image  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/图形化引导界面.png 开启超级变身的OC引导界面 download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/图形化引导界面.png %}
+{% image  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210908/22:45-双系统.png macboot Ait download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210908/22:45-双系统.png %}
 {% image  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/关于本机.png 关于本机 download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/关于本机.png %}
 {% image  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/系统更新.png 系统更新当前最新 download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/系统更新.png %}
 {% image  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/电源.png 电源 download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/电源.png %}

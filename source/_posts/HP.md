@@ -1,7 +1,7 @@
 ---
 title: HP_ENVY_13_D025笔记本
 cover: >-
-  https://cdn.jsdelivr.net/gh/MuziShaoxing/Picture@main/image/png/20210507-Xcx1LX.png
+  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210908/22:52-08143707.png
 dark: true
 tags:
   - 笔记本
@@ -30,6 +30,7 @@ date: 2021-04-21 20:45:00
 | **网卡「更换」** | **英特尔 WiFi6 AX200 160MHz**                      |
 
 ### 系统支持
+![22:45-双系统](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210908/22:45-双系统.png)
 {% folding 操作系统适配 %}
 
 | [![icon_58x58](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Apple(iOS)/icon_58x58.png) ](https://hackintool.vercel.app/)| [![Monterey](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Monterey.png)](https://www.apple.com.cn/macos/monterey-preview/) | [![Big_Sur1](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Big_Sur1.png) ](https://www.apple.com.cn/macos/big-sur/)| [![Catalina](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Catalina.png) ](https://www.apple.com.cn/newsroom/2019/10/macos-catalina-is-available-today/)| [![icon_58x58](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Windows/icon_58x58.png)](https://www.microsoft.com/zh-cn/windows/features) |   [![Windows11](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Windows11.png) ](https://www.microsoft.com/zh-cn/windows/windows-11)  |
@@ -46,7 +47,7 @@ date: 2021-04-21 20:45:00
 | **功能**              | **依赖**                                                | **备注**                                                     |
 | -------------------------  | :------------------------------------------------------ | ------------------------------------------------------------ |
 | **Wi-Fi**                 |  **AirportItlwm_Monterey.kext<br/>AirportItlwm_Big_Sur.kext** | 
-| **蓝牙**                  |  **IntelBluetoothFirmware.kext<br/>蓝牙识别驱动☞**       | **Big Sur-IntelBluetoothInjector.kext<br/>Monterey-BlueToolFixup.kext** |
+| **蓝牙**                  |  **IntelBluetoothFirmware.kext<br/>蓝牙识别驱动☞**       | **Big Sur蓝牙识别:<br/>IntelBluetoothInjector.kext<br/>Monterey蓝牙识别:<br/>BlueToolFixup.kext** |
 | **自带扬声器输出**        |  **AppleALC.kext**                                       |                                                              |
 | **麦克风输入**            |  **AppleALC.kext**                                       |                                                              |
 | **3.5mm 接口输出**        |  **AppleALC.kext**                                       |                                                              |
@@ -54,7 +55,7 @@ date: 2021-04-21 20:45:00
 | **电量百分比显示**        |  **SMCBatteryManager.kext**                              |                                                              |
 | **CPU 电源管理**          |  **SSDT-PLUG-_PR.CPU0.aml**                              | **MacBookPro13,2**                                           |
 | **S3_睡眠** |  **SSDT-DWAK.aml**                                       |                                                              |
-| **S D读卡器**             |  **Sinetek-rtsx.kext**                                   | **⚠️有缺陷，休眠报错**                                        |
+| **S D读卡器**             |  **RealtekCardReader.kext<br/>RealtekCardReaderFriend.kext**                                   | **⚠️休眠后自动弹出<br/>👍重新插拔可用**                                        |
 | **USB 电源属性** |  **SSDT-EC-USBX-LAPTOP.aml**                             |                                                              |
 | **USB 2.0, USB 3.0**      |  **USBPorts.kext**                                       | **或“SSDT-UIAC.aml”**                                        |
 | **显示器亮度调节**        |  **BrightnessKeys.kext<br/>SSDT-PNLF-SKL_KBL.aml**       |                                                              |
@@ -80,6 +81,14 @@ date: 2021-04-21 20:45:00
 ## 更新日志
 {% folding 点开查看更新日志 %}
 {% timeline %}
+<!-- node 2021 年 9 月 7 日 -->
+升级OpenCore0.7.3正式版底包,更新部分驱动版本
+- 增加默认主题图标集图标UOS
+- {% del 移除原SD读卡器驱动“Sinetek-rtsx.kext” %}替换为{% u RealtekCardReader.kext+RealtekCardReaderFriend.kext %}
+  - 优点: 内建SD读卡器，系统报告可查
+  - 缺点: 休眠强制弹出（可热插拔恢复）
+{% sup 小毛病的了，不影响使用 color:light %}
+
 <!-- node 2021 年 8 月 5 日 -->
 升级OpenCore0.7.2正式版底包,更新部分驱动版本
 - 替换全套网卡驱动为ax200专用精简版

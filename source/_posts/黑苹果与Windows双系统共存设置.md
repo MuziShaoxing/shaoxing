@@ -10,6 +10,8 @@ abbrlink: 6629381b
 ---
 
 ## 如何安装双系统
+### 成品欣赏
+![22:45-双系统](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210908/22:45-双系统.png)
 ### Mac系统安装Windows
 - 启动转换助理安装Windows:[苹果官网](https://support.apple.com/zh-cn/guide/bootcamp-assistant/toc/mac) 
 ### Windows系统下安装Mac
