@@ -1,6 +1,9 @@
 ---
 title: Apple_ID登陆修复
 abbrlink: ca810459
+cover: >-
+  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210910/22:31-111.png
+dark: true
 tags:
   - 修复
 categories:

@@ -46,7 +46,7 @@ date: 2021-04-21 20:45:00
 #### 驱动正常的设备功能
 | **功能**              | **依赖**                                                | **备注**                                                     |
 | -------------------------  | :------------------------------------------------------ | ------------------------------------------------------------ |
-| **Wi-Fi**                 |  **AirportItlwm_Monterey.kext<br/>AirportItlwm_Big_Sur.kext** | 
+| **Wi-Fi**                 |  **AirportItlwm_Monterey.kext<br/>AirportItlwm_Big_Sur.kext** | AirportItlwm_Catalina.kext<br/>AirportItlwm_Mojave.kext
 | **蓝牙**                  |  **IntelBluetoothFirmware.kext<br/>蓝牙识别驱动☞**       | **Big Sur蓝牙识别:<br/>IntelBluetoothInjector.kext<br/>Monterey蓝牙识别:<br/>BlueToolFixup.kext** |
 | **自带扬声器输出**        |  **AppleALC.kext**                                       |                                                              |
 | **麦克风输入**            |  **AppleALC.kext**                                       |                                                              |
