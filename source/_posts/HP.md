@@ -31,11 +31,11 @@ date: 2021-04-21 20:45:00
 
 ### 系统支持
 ![22:45-双系统](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210908/22:45-双系统.png)
-{% folding 操作系统适配 %}
+{% folding 操作系统测试支持 %}
 
-| [![icon_58x58](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Apple(iOS)/icon_58x58.png) ](https://hackintool.vercel.app/)| [![Monterey](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Monterey.png)](https://www.apple.com.cn/macos/monterey-preview/) | [![Big_Sur1](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Big_Sur1.png) ](https://www.apple.com.cn/macos/big-sur/)| [![Catalina](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Catalina.png) ](https://www.apple.com.cn/newsroom/2019/10/macos-catalina-is-available-today/)| [![icon_58x58](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Windows/icon_58x58.png)](https://www.microsoft.com/zh-cn/windows/features) |   [![Windows11](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Windows11.png) ](https://www.microsoft.com/zh-cn/windows/windows-11)  |
-| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | -- |
-|                           **完美适配VS黑苹果**                         |                         **Monterey**                         |                         **Big_Sur**                          |                           **Catalina**                           |                          **Windows 10**                           |   **Windows 11**  |
+| [![icon_58x58](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Apple(iOS)/icon_58x58.png) ](https://hackintool.vercel.app/)| [![Monterey](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Monterey.png)](https://www.apple.com.cn/macos/monterey-preview/) | [![Big_Sur1](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Big_Sur1.png) ](https://www.apple.com.cn/macos/big-sur/)| [![Catalina](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Catalina.png) ](https://www.apple.com.cn/newsroom/2019/10/macos-catalina-is-available-today/)| [![icon_58x58](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Windows/icon_58x58.png)](https://www.microsoft.com/zh-cn/windows/features) |   [![Windows11](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Windows11.png) ](https://www.microsoft.com/zh-cn/windows/windows-11)  |  [![23:46-icon_58x58](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210909/23:46-icon_58x58.png)](https://www.chinauos.com/resource/download-home)
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | -- | -- |
+|                           **完美适配VS黑苹果**                         |                         **Monterey**                         |                         **Big Sur**                          |                           **Catalina**                           |                          **Windows 10**                           |   **Windows 11**  |  **UOS** |
 
 
 {% endfolding %}
@@ -53,12 +53,13 @@ date: 2021-04-21 20:45:00
 | **3.5mm 接口输出**        |  **AppleALC.kext**                                       |                                                              |
 | **图形硬件加速**          |  **WhateverGreen.kext**                                  |                                                              |
 | **电量百分比显示**        |  **SMCBatteryManager.kext**                              |                                                              |
-| **CPU 电源管理**          |  **SSDT-PLUG-_PR.CPU0.aml**                              | **MacBookPro13,2**                                           |
+| **CPU 电源管理**          |  **SSDT-PLUG-_PR.CPU0.aml**                              |                                       |
+| **SMBIOS**          |  **MacBookPro13,2**                              |         **仿冒机型-三码请自我刷新**                                  |
 | **S3_睡眠** |  **SSDT-DWAK.aml**                                       |                                                              |
 | **S D读卡器**             |  **RealtekCardReader.kext<br/>RealtekCardReaderFriend.kext**                                   | **⚠️休眠后自动弹出<br/>👍重新插拔可用**                                        |
 | **USB 电源属性** |  **SSDT-EC-USBX-LAPTOP.aml**                             |                                                              |
 | **USB 2.0, USB 3.0**      |  **USBPorts.kext**                                       | **或“SSDT-UIAC.aml”**                                        |
-| **显示器亮度调节**        |  **BrightnessKeys.kext<br/>SSDT-PNLF-SKL_KBL.aml**       |                                                              |
+| **显示器亮度调节**        |  **BrightnessKeys.kext<br/>SSDT-PNLF-SKL_KBL.aml**       |       **配合重命名PNLF更名XNLF<br/>解决OC引导Windows蓝屏**                                                       |
 | **键盘与触控板手势**      |  **VoodooPS2Controller.kext**                            | **全部手势都可用**                                           |
 | **🔗安卓USB共享网络**  |  **HoRNDIS.kext**                                        | **我不需要，尚未启用**                                       |
 | **美化-白果鼠标**         |  **FakeAppleUSBMouse.kext**                              | **需改ID**                                                   |
@@ -83,19 +84,18 @@ date: 2021-04-21 20:45:00
 {% timeline %}
 <!-- node 2021 年 9 月 7 日 -->
 升级OpenCore0.7.3正式版底包,更新部分驱动版本
-- 增加默认主题图标集图标UOS
+- 更换自制简约主题![23:52-20210909](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210909/23:52-20210909.png)
 - {% del 移除原SD读卡器驱动“Sinetek-rtsx.kext” %}替换为{% u RealtekCardReader.kext+RealtekCardReaderFriend.kext %}
   - 优点: 内建SD读卡器，系统报告可查
-  - 缺点: 休眠强制弹出（可热插拔恢复）
-{% sup 小毛病的了，不影响使用 color:light %}
+  - 缺点: 休眠强制弹出（可热插拔恢复）{% sub 小毛病的了，不影响使用 color:light %}
 
 <!-- node 2021 年 8 月 5 日 -->
 升级OpenCore0.7.2正式版底包,更新部分驱动版本
-- 替换全套网卡驱动为ax200专用精简版
+- 替换全套网卡驱动为{% u ax200专用精简版 %}
 - 调整SSDT补丁为专用补丁
   - 增加重命名PNLF renamed XNLF 
   - 解决调整后无法进入Windows
-- 注意：此引导版本已无法支持Big Sur以下版本，旧版本不可升级！
+- 注意：{% u 此引导版本已无法支持Big Sur以下版本，使用Catalina及以下版本不可升级！ %}
 
 <!-- node 2021 年 7 月 30 日 -->
 - 添加英特尔无线网卡对**Monterey**支持
@@ -284,19 +284,23 @@ date: 2021-04-21 20:45:00
 {% folding 下载地址 %}
 - 我的成品EFI：https://pan.bilnn.com/s/Y7DKUW
 - 驱动下载地址： 
-  - OpenCorePkg：https://github.com/acidanthera/OpenCorePkg
-  - Lilu：https://github.com/acidanthera/Lilu
-  - VirtualSMC：https://github.com/acidanthera/VirtualSMC/releases
-    - 包含所有SMC相关驱动
-  - WhateverGreen：https://github.com/bugprogrammer/WhateverGreen/releases
-  - AppleALC：https://github.com/acidanthera/AppleALC
-  - itlwm：https://github.com/OpenIntelWireless/itlwm
-  - VoodooPS2：https://github.com/acidanthera/VoodooPS2/releases
-  - VoodooI2C：https://github.com/VoodooI2C/VoodooI2C/releases
-  - Sinetek-rtsx：https://github.com/cholonam/Sinetek-rtsx/releases
-  - BrightnessKeys：https://github.com/acidanthera/BrightnessKeys
-  - CPUFriend：https://github.com/acidanthera/CPUFriend
-  - USBInjectAll：https://github.com/daliansky/OS-X-USB-Inject-All
+  - OC底层架构更新: [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg)
+  - 核心驱动: [Lilu](https://github.com/acidanthera/Lilu)
+  - SMC仿真器:[VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases)
+  - 显卡驱动: [WhateverGreen](https://github.com/bugprogrammer/WhateverGreen/releases)
+  - 声卡驱动: [AppleALC](https://github.com/acidanthera/AppleALC)
+  - 英特尔无线网卡: [itlwm](https://github.com/OpenIntelWireless/itlwm)
+  - 英特尔蓝牙驱动: [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware)
+  - 博通网卡Wi-Fi: [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup/releases)
+  - 博通网卡蓝牙: [BrcmPatchRAM/BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM/releases)
+  - PS2键盘触控板驱动: [VoodooPS2](https://github.com/acidanthera/VoodooPS2/releases)
+  - I2C触控板驱动: [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C/releases)
+  - 亮度调节键: [BrightnessKeys](https://github.com/acidanthera/BrightnessKeys)
+  - CPU频率定制: [CPUFriend](https://github.com/acidanthera/CPUFriend)
+  - USB 端口识别: [USBInjectAll](https://github.com/daliansky/OS-X-USB-Inject-All)
+  - SD读卡器驱动（可识别内建）: [RealtekCardReader](https://github.com/0xFireWolf/RealtekCardReader)+[RealtekCardReaderFriend](https://github.com/0xFireWolf/RealtekCardReaderFriend)
+  - SD读卡器驱动（不识别内建）：[Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx/releases)
+
 
 - ACPI补丁包：https://github.com/daliansky/OC-little
 - 驱动分流仓库：https://pan.bilnn.com/s/omr5SY
