@@ -14,6 +14,15 @@ abbrlink: 6629381b
 ![22:45-双系统](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210908/22:45-双系统.png)
 ### Mac系统安装Windows
 - 启动转换助理安装Windows:[苹果官网](https://support.apple.com/zh-cn/guide/bootcamp-assistant/toc/mac) 
+
+### Windows下安装Linux系统UOS
+1. 前往[UOS官网]()下载镜像
+2. 使用镜像自带写盘工具写入U盘
+3. 使用分区工具提前制作预留安装分区
+4. 重启进入UOS安装
+5. {% u 重点提示:如预留分区安装，一定要选择分区安装（错选全盘安装，全盘资料丢失） ，其次可随意 %}
+6. 等待完成
+
 ### Windows系统下安装Mac
 1. 前往黑果小兵部落阁下载黑苹果镜像
 2. 下载完成后，使用balenaEtcher选择下载好的DMG镜像写入U盘。
@@ -28,7 +37,7 @@ PS：上述过程可能会出错，相关错误信息有科技大佬博主在维
 8. 详细教程请查看[Mac安装教程](https://hackintool.vercel.app/2/index.html)
 
 ## 安装后引导设置
-### 如何将EFI文件复制到硬盘ESP分区
+### 如何将黑苹果EFI文件复制到硬盘ESP分区
 {% folding Mac系统下 %}
 - 使用[OpenCore Configurator](https://macwk.com/soft/opencore-configurator)
   - 打开**OpenCore Configurator**后桌面点击右上角图标，挂载分区，输入密码，打开分区即可
@@ -80,8 +89,18 @@ Mac环境下无法设置底层UEFI启动参数，我这里推荐各位单EFI分�
 - 优点是，重置nvram不会丢失启动项
 {% endfolding %}
 {% endfolding %} 
-
+{% folding OpenCore 引导 Linux %}
+- 0.7.3更新后支持了OpenCore原生引导linux，从此再也不需要多一个分区专门放置LinuxEFI了
+- 使用方式：
+  1. 升级{% kbd OpenCore 0.7.3 %}{% psw 0.7.3以下是否可以使用此办法我不知道，但是你可以试试 %}
+  2. 设置扫描策略无限制![18:33-8nvhWZ](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210911/18:33-8nvhWZ.png)
+  3. 加载引导linux所需驱动{% kbd btrfs_x64.efi %}   {% kbd ext4_x64.efi %}  {% kbd OpenLinuxBoot.efi %}
+![18:43-ioT46p](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210911/18:43-ioT46p.png)
+  4. 备份后删除EFI分区中的LinuxEFI文件（或改名）
+  5. 重启检查是否正确引导。
+{% endfolding %}
 ## 双系统常见故障修复
+
 {% folding OpenCore引导Windows蓝屏报错 %}
 以下仅收录常见蓝屏报错，
 - 笔记本
