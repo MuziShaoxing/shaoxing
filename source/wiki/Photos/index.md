@@ -4,7 +4,7 @@ wiki: 图片空间
 title: 阅读须知
 order: 1
 ---
-{% image https://cdn.jsdelivr.net/gh/Less-star/image-host/Wallpaper/2222.png 请注意当前网络环境，此处多图预警。 download:https://cdn.jsdelivr.net/gh/Less-star/image-host/Wallpaper/2222.png
+{% image https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210914/21:11-56789.png 请注意当前网络环境，此处多图预警。 download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210914/21:12-8769.png
  %}
 ## 网络环境警告
 - 请确认当前网络环境！

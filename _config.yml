@@ -60,7 +60,7 @@ pretty_urls:
 # 部署
 deploy:
   type: git
-  repo: https://github.com/Less-star/less-star.github.io.git
+  repo: https://github.com/Less-star/Less-star.github.io.git
   # example, https://less-star.github.io/
   branch: gh-pages
 # RSS订阅-需要安装 hexo-generator-feed
