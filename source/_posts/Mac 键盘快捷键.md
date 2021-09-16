@@ -7,6 +7,7 @@ tags:
   - 快捷键
 categories:
   - 黑苹果教程
+sticky: 100
 abbrlink: 814a1e
 ---
 > 版权©️声明 : 本页出自[Apple支持「Mac 键盘快捷键」](https://support.apple.com/zh-cn/HT201236)适配Windows键盘改写。

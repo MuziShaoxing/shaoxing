@@ -384,3 +384,17 @@ D-->>A: Dashed open arrow
 
 [^footnote2]: 这是另一个 *注脚* 的 **文本**。
 
+
+| 代码          | 作用     | 备注                          |
+| ------------- | -------- | ----------------------------- |
+| pin           | 文章置顶 | 开启true，关闭false           |
+| title         | 文章标题 | 文章名字                      |
+| cover         | 文章标图 | cover：图片地址/关键词        |
+| dark          | 暗黑模式 | 开启true，关闭false           |
+| tags          | 标签     |                               |
+| categories    | 分类     |                               |
+| abbrlink      | 唯一链接 | 依赖npm install hexo-abbrlink |
+| <!-- more --> | 文章摘要 | 前后空格换行                  |
+| sticky        | 文章置顶 | 数值越大越前置                |
+
+## 

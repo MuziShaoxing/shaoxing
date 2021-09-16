@@ -29,7 +29,7 @@ article:  # 如果没有指定 excerpt 和 description，将自动取多长的�
   share: [wechat, weibo, email, link]
   # 你可能感兴趣的文章-需要安装npm i hexo-related-popular-posts
   related_posts:
-    enable: false
+    enable: true
     title: 您可能感兴趣的文章
     max_count: 5
 ######## 评论 ########
@@ -82,4 +82,4 @@ tag_plugins:
   # 对应颜色：白色、深色、红色、橙色、黄色、绿色、青色、蓝色、紫色
   # {% checkbox %}
   checkbox:
-    interactive: false # 为用户启用交互式
+    interactive: true # 为用户启用交互式

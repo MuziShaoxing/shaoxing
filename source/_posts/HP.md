@@ -1,13 +1,13 @@
 ---
-title: HP_ENVY_13_D025笔记本
-cover: >-
-  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210908/22:52-08143707.png
+title: HP-ENVY 13-D025
+cover: https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210917/06:47-14152327.png
 dark: true
 tags:
   - 笔记本
 categories:
   - 记录
 abbrlink: c128ce6e
+pin: true
 date: 2021-04-21 20:45:00
 ---
 ## 系统检测
@@ -82,6 +82,11 @@ date: 2021-04-21 20:45:00
 ## 更新日志
 {% folding 点开查看更新日志 %}
 {% timeline %}
+<!-- node 2021 年 9 月 10 日 -->
+- 添加以下驱动以支持原生引导Linux
+  - {% kbd OpenLinuxBoot.efi %}
+  - {% kbd ext4_x64.efi %}
+  - {% kbd btrfs_x64.efi %}
 <!-- node 2021 年 9 月 7 日 -->
 升级OpenCore0.7.3正式版底包,更新部分驱动版本
 - 更换自制简约主题![23:52-20210909](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210909/23:52-20210909.png)
