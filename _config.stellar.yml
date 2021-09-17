@@ -5,18 +5,9 @@ sidebar:
     friends: '[便笺](/notes/)'
     about: '[友联](/about/)'
   # 侧边栏小工具
-  widgets:
     # 主页/项目/类别/标签/归档页面中的默认布局
-    default: [welcome, recent] # 最近更新
-    recent:
-      layout: recent
-      rss: /atom.xml # 需要插件npm i hexo-generator-feed
-      limit: 5 # 显示帖子数
-    welcome:
-      layout: markdown
-      title: 欢迎
-      content:
-        - '欢迎来到我的小站。'
+  widgets:
+    default_layout: [welcome, recent]
 # 文章
 article:  # 如果没有指定 excerpt 和 description，将自动取多长的内容作为文章摘要？
   auto_excerpt: 0
