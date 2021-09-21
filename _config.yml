@@ -18,7 +18,7 @@ avatar: https://cdn.jsdelivr.net/gh/Less-star/image-host/Wallpaper/favicon.png
 
 # 网站信息∂
 title: 少星部落阁
-subtitle: 勿忘初心
+subtitle: 不忘初心 | 勿忘心安
 description: 七窍通了六窍——一窍不通
 author: 少 星
 email: 262782714@qq.com
@@ -46,7 +46,7 @@ per_page: 5
 pagination_dir: page
 
 # 网站URL
-url: https://shaoxing.vercel.app # https://shaoxing.netlify.app # 
+url: https://shaoxing.vercel.app  # https://shaoxing.netlify.app # 
 # 如果您的站点位于子目录中，请修改root：/子目录路径
 root: /
 
