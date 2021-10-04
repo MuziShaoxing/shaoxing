@@ -30,6 +30,7 @@
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
     "hexo-tag-dplayer": "^0.3.3",
+    "hexo-tag-hint": "^0.3.1",
     "hexo-theme-stellar": "^1.1.0",
     "hexo-util": "^2.5.0"
   }

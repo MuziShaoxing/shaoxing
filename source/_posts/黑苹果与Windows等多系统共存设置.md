@@ -94,11 +94,11 @@ Mac环境下无法设置底层UEFI启动参数，我这里推荐各位单EFI分�
 - 使用方式：
   1. 升级{% kbd OpenCore 0.7.3 %}{% psw 0.7.3以下是否可以使用此办法我不知道，但是你可以试试 %}
   2. 设置扫描策略无限制![18:33-8nvhWZ](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210911/18:33-8nvhWZ.png)
-  3. 加载引导linux所需驱动{% kbd btrfs_x64.efi %}   {% kbd ext4_x64.efi %}  {% kbd OpenLinuxBoot.efi %}
-![18:43-ioT46p](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210911/18:43-ioT46p.png)
+  3. 加载引导linux所需驱动[btrfs_x64.efi • ext4_x64.efi • OpenLinuxBoot.efi](https://github.com/acidanthera/OcBinaryData)
+    ![18:43-ioT46p](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210911/18:43-ioT46p.png)
   4. 备份后删除EFI分区中的LinuxEFI文件（或改名）
   5. 重启检查是否正确引导。
-{% endfolding %}
+    {% endfolding %}
 ## 双系统常见故障修复
 
 {% folding OpenCore引导Windows蓝屏报错 %}
@@ -125,11 +125,11 @@ OpenCore引导Windows导致激活Windows失败报错，通常与UUID有关，
 2. 使用管理员身份打开Windows PowerShell依次输入以下代码：
 ``` 
 wmic csproduct 或 csproduct list full
-``` 
+```
 你会获得以下内容，取其中UUID填到配置表内即可。
 ``` 
 PS C:\Windows\system32> wmicwmic:root\cli>csproductCaption         Description     IdentifyingNumber  Name            SKUNumber  UUID                                  Vendor       Version计算机系统产品  计算机系统产品  C02R6EZ5****       ENVY NOTEBOOK 13             88888888-8888-8888-8888-888888888888  Acidanthera  1.0
-``` 
+```
 {% endfolding %}
 
 {% folding Windows关机不断电 %}
@@ -143,10 +143,10 @@ Windows关机不断电：关闭Windows快速启动，
 - 方案一 
   - window7用户开始->运行->输入CMD 
   - window8/10用户WIN+x选择管理员模式进入CMD 输入下面命令并回车代码:
-{% copy Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1   %} 
+  {% copy Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1   %} 
 - 方案二
   - 下载[WinUTCOn.reg](https://pan.bilnn.com/s/6aWEfL)双击运行
-{% endfolding %}
+  {% endfolding %}
 
 {% folding OpenCore引导找不到Mac/Windows启动项 %}
 - 单磁盘双系统如OpenCore中无法找到Windows启动项，请更改配置表：
