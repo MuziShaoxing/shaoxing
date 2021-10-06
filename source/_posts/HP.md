@@ -24,21 +24,26 @@ date: 2021-04-21 20:45:00
 | **主板芯片**     | **惠普 80DF(笔记本芯片组)**                          |
 | **核    显**     | **英特尔HD Graphics 520(128MB/惠普)**                 |
 | **板载内存**     | **8GB(SK Hynix LPDDR3 1600MHz)**                       |
-| **内置硬盘**     | **建兴 L8H-256V2G-HP(256GB/固态硬盘)**                 |
+| **内置硬盘**     | **西部数据 WDS100T2B0B-00YS70 (1TB/固态硬盘)**                 |
 | **显示器**       | **三星 SDC415A(13.3英寸)**                           |
 | **声卡**         | **瑞昱@英特尔HighDefinition Audio控制器「ALC290」** |
 | **网卡「更换」** | **英特尔 WiFi6 AX200 160MHz**                      |
+| **黑苹果当前测试** | **正式版 Big Sur 11.6 <br/> 开发版 Monterey bate 8**|
+| **报表更新日期** | **2021-10-06**                      |
+
+
 
 ### 系统支持
-![22:45-双系统](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210908/22:45-双系统.png)
-{% folding 操作系统测试支持 %}
-
-| [![icon_58x58](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Apple(iOS)/icon_58x58.png) ](https://hackintool.vercel.app/)| [![Monterey](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Monterey.png)](https://www.apple.com.cn/macos/monterey-preview/) | [![Big_Sur1](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Big_Sur1.png) ](https://www.apple.com.cn/macos/big-sur/)| [![Catalina](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Catalina.png) ](https://www.apple.com.cn/newsroom/2019/10/macos-catalina-is-available-today/)| [![icon_58x58](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Windows/icon_58x58.png)](https://www.microsoft.com/zh-cn/windows/features) |   [![Windows11](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Windows11.png) ](https://www.microsoft.com/zh-cn/windows/windows-11)  |  [![23:46-icon_58x58](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210909/23:46-icon_58x58.png)](https://www.chinauos.com/resource/download-home)
-| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | -- | -- |
-|                           **完美适配VS黑苹果**                         |                         **Monterey**                         |                         **Big Sur**                          |                           **Catalina**                           |                          **Windows 10**                           |   **Windows 11**  |  **UOS** |
+![09:59-双系统](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20211006/09:59-%E5%8F%8C%E7%B3%BB%E7%BB%9F.png)
+**操作系统测试支持**
 
 
-{% endfolding %}
+| [![Monterey](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Monterey.png)](https://www.apple.com.cn/macos/monterey-preview/) | [![Big_Sur1](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Big_Sur1.png) ](https://www.apple.com.cn/macos/big-sur/) | [![Catalina](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Catalina.png) ](https://www.apple.com.cn/newsroom/2019/10/macos-catalina-is-available-today/) | [![icon_58x58](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Windows/icon_58x58.png)](https://www.microsoft.com/zh-cn/windows/features) | [![Windows11](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Windows11.png) ](https://www.microsoft.com/zh-cn/windows/windows-11) | [![23:46-icon_58x58](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210909/23:46-icon_58x58.png)](https://www.chinauos.com/resource/download-home) |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|                         **Monterey**                         |                         **Big Sur**                          |                         **Catalina**                         |                        **Windows 10**                        |                        **Windows 11**                        |                           **UOS**                            |
+
+
+
 
 ### 功能检测
 {% folding 点击查看功能检测 %}
@@ -69,6 +74,7 @@ date: 2021-04-21 20:45:00
 #### 尚未测试与不可驱动的功能
 | 功能     | 依赖  | 备注               |
 | -------- | ----- | ------------------ |
+| 指纹 | **❌** | 无法驱动 |
 | 隔空投送 | **❌** | 英特尔网卡暂不支持 |
 | 开机音频 | **❌** | 原因不详           |
 | 开机花屏 | **⚠️**   | 一瞬闪屏           |
@@ -82,11 +88,17 @@ date: 2021-04-21 20:45:00
 ## 更新日志
 {% folding 点开查看更新日志 %}
 {% timeline %}
+<!-- node 2021 年 10 月 5 日 -->
+升级OpenCore0.7.4正式版底包,更新部分驱动版本
+- 因官方文档说明，修改**ext4_x64.efi**优先于**OpenLinuxBoot.efi**前加载。
+- 增加驱动[RestrictEvents.kext](https://github.com/acidanthera/RestrictEvents)用于解决Monterey bate更新出错。
+
 <!-- node 2021 年 9 月 10 日 -->
 - 添加以下驱动以支持原生引导Linux
   - {% kbd OpenLinuxBoot.efi %}
   - {% kbd ext4_x64.efi %}
   - {% kbd btrfs_x64.efi %}
+
 <!-- node 2021 年 9 月 7 日 -->
 升级OpenCore0.7.3正式版底包,更新部分驱动版本
 - 更换自制简约主题![23:52-20210909](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210909/23:52-20210909.png)
@@ -246,50 +258,17 @@ date: 2021-04-21 20:45:00
 {% endtimeline %}
 {% endfolding %}
 
-## 教程整理
-{% folding 这是我整理的一些教程 %}
-
-[黑苹果的由来](https://mp.weixin.qq.com/s/UdXYPO6j6w1hJWiOW_WJlw)
-
-[黑苹果之小白科普](https://mp.weixin.qq.com/s/cRzil2pSZlinx8Uo-gcTmA)
-
-[转载：Hackintosh 实用教程与命令](https://mp.weixin.qq.com/s/md5e0he58CIcgD5n6RjxkQ)
-
-[镜像下载地址整理](https://mp.weixin.qq.com/s/4XdLHYcWpdt35eK8IsJRgA)
-
-[使用用gibMacOS图文安装黑苹果](https://mp.weixin.qq.com/s/ErmynXX26_sCGACy9rAe6Q)
-
-[黑苹果OpenCore（OC）引导升级教程](https://mp.weixin.qq.com/s/BUT6xpii7AWpErRwRPzOLA)
-
-[一个小白的黑苹果之旅[我的efi]](https://mp.weixin.qq.com/s/Vnrx2dGH1jbX168KkZFZWg)
-
-[黑苹果之网卡驱动篇](https://mp.weixin.qq.com/s/s7HgTlHzhbUwLAHxaKTMAA)
-
-[黑苹果之触控板篇](https://mp.weixin.qq.com/s/3fuHN2isetrVMDzwY45m2g)
-
-[一键开启 MacOS HIDPI](https://mp.weixin.qq.com/s/C7URLJ4jXRKBKuz_GGqBWw)
-
-[黑苹果之独立显卡支持列表](https://mp.weixin.qq.com/s/l-SnOXMQ9zXjJgBA3tb9zA)
-
-[黑苹果 CPU 管理驱动（开启CPU变频）](https://mp.weixin.qq.com/s/upV_PWL9rLMzZRyAR2K61A)
-
-[黑苹果/Windows双系统引导共存设置](https://mp.weixin.qq.com/s/VHQboy1H4mzC3jfB6KJbgg)
-
-[雷电三补丁模版与生成](https://mp.weixin.qq.com/s/xri9Jhv0Onr-_A54NIMpSw)
-
-[黑苹果之登陆APP Store（设备内建）](https://mp.weixin.qq.com/s/OXEAcO48Ri8vORpcNNjRnQ)
-
-[黑苹果与Windows系统时间不同步的解决办法](https://mp.weixin.qq.com/s/wPbpt1CVlN3cQE-brVG5Zg)
-
-[OpenCore（OC）引导添加可视化主题](https://mp.weixin.qq.com/s/Z92mjDpx3YTdIy80W6tlIQ)
-
-{% endfolding %}
 
 ## 下载地址聚合
 {% folding 下载地址 %}
+- 教程合集
+  - https://hackintool.vercel.app/
+  - https://hackintool.netlify.app/
 - 我的成品EFI：https://pan.bilnn.com/s/Y7DKUW
+- 我的主题仓库: https://pan.bilnn.com/s/mmZnix?path=%2F
 - 驱动下载地址： 
   - OC底层架构更新: [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg)
+  - OC官方主题仓库: [OcBinaryData](https://github.com/acidanthera/OcBinaryData)
   - 核心驱动: [Lilu](https://github.com/acidanthera/Lilu)
   - SMC仿真器:[VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases)
   - 显卡驱动: [WhateverGreen](https://github.com/bugprogrammer/WhateverGreen/releases)
@@ -305,8 +284,8 @@ date: 2021-04-21 20:45:00
   - USB 端口识别: [USBInjectAll](https://github.com/daliansky/OS-X-USB-Inject-All)
   - SD读卡器驱动（可识别内建）: [RealtekCardReader](https://github.com/0xFireWolf/RealtekCardReader)+[RealtekCardReaderFriend](https://github.com/0xFireWolf/RealtekCardReaderFriend)
   - SD读卡器驱动（不识别内建）：[Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx/releases)
-
-
+  - 安卓USB共享网络: [HoRNDIS](https://github.com/jwise/HoRNDIS/releases)
+  - 解除更新限制: [RestrictEvents.kext](https://github.com/acidanthera/RestrictEvents)
 - ACPI补丁包：https://github.com/daliansky/OC-little
 - 驱动分流仓库：https://pan.bilnn.com/s/omr5SY
 {% endfolding %}
