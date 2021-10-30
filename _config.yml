@@ -2,15 +2,17 @@
 ## 文档：https://hexo.io/docs/configuration.html
 ## 来源：https://github.com/hexojs/hexo/
 
-# Security
-encrypt: # hexo-blog-encrypt
-  abstract: 有东西被加密了, 请输入密码查看.
-  message: 您好, 这里需要密码.
-  tags:
-  - {name: 加密档案1, password: 123456}
-  - {name: 加密档案2, password: 987654321}
-  wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
-  wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
+### 优化 ###
+# 加载速度 npm i hexo-all-minifier
+all_minifier: true
+# 网站地图
+# https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap
+sitemap:
+  path: sitemap.xml
+  tag: false
+  category: false
+  page_priority: 0.4
+  post_priority: 0.6
 
 # 主题设置
 theme: stellar

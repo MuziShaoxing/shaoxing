@@ -88,6 +88,12 @@ date: 2021-04-21 20:45:00
 ## 更新日志
 {% folding 点开查看更新日志 %}
 {% timeline %}
+<!-- node 2021 年 10 月 30 日 -->
+完美支持**Monterey**正式版
+- 升级**BlueToolFixup.kext**为2.6.1开发版，修复蓝牙无法关闭
+- 重新调整显卡参数，确保更好的支持
+- 发布包名{% kbd Monterey正式版074 %}
+  - 注:此包依旧可以正常使用Big Sur
 <!-- node 2021 年 10 月 5 日 -->
 升级OpenCore0.7.4正式版底包,更新部分驱动版本
 - 因官方文档说明，修改**ext4_x64.efi**优先于**OpenLinuxBoot.efi**前加载。

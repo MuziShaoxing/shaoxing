@@ -3,6 +3,7 @@ title: 黑苹果声卡ID注入表
 abbrlink: bdd0d26d
 cover: >-
   https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210910/00:29-1994440.jpg
+date: 2021-04-21 20:45:00
 dark: true
 ---
 

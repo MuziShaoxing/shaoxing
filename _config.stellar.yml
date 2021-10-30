@@ -1,15 +1,60 @@
+######## Stellar info ########
+stellar:
+  version: '1.5.2'
+  homepage: 'https://xaoxuu.com/wiki/stellar/'
+  repo: 'https://github.com/xaoxuu/hexo-theme-stellar'
+  cdn_css: # Use cdn links instead of /css/main.css
+  cdn_js: # Use cdn links instead of /js/main.js
+
+
+######## 侧边栏 ########
 sidebar:
   menu:
     post: '[博客](/)'
     wiki: '[项目](/wiki/)'
     friends: '[便笺](/notes/)'
-    about: '[友联](/about/)'
-  # 侧边栏小工具
-    # 主页/项目/类别/标签/归档页面中的默认布局
+    about: '[更多](/about/)'
+  # 侧栏小部件
   widgets:
     default_layout: [welcome, recent]
-# 文章
-article:  # 如果没有指定 excerpt 和 description，将自动取多长的内容作为文章摘要？
+    # 最新更新
+    recent:
+      layout: recent
+      rss: /atom.xml                                     # npm i hexo-generator-feed
+      limit: 5                                           # 帖子数量
+    # TOC (以下布局中的有效 layout:post/wiki)
+    toc:
+      layout: toc                                        # toc布局
+      list_number: false                                 # 显示编号
+      min_depth: 2                                       # 最小深度
+      max_depth: 5                                       # 最大深度
+      fallback: recent                                   # 后备：最近#当toc不存在时使用备份小部件。
+    # 欢迎页
+    welcome:                                           # 欢迎页
+      layout: markdown                                   # 布局
+      title: Stellar 入门指南
+      content:
+        - '欢迎使用 [Stellar](https://github.com/xaoxuu/hexo-theme-stellar/) 主题，下面是您的入门指南，祝您使用愉快！'
+        - '<br>'
+        - '**第一步**'
+        - '创建 `blog/_config.stellar.yml` 文件，在此文件中填写需要自定义的主题配置。'
+        - '<br>'
+        - '**第二步**'
+        - '创建 `blog/source/_data/widgets.yml` 文件，此文件中填写需要自定义的侧边栏组件，例如 `welcome` 组件。'
+        - '<br>'
+        - '如果有任何疑问，请先查阅[文档](https://xaoxuu.com/wiki/stellar/)，如果文档中没有提供，请提 [issue](https://github.com/xaoxuu/hexo-theme-stellar/issues/) 向开发中询问。'
+
+
+
+######## Main ########
+breadcrumb:
+  home: config.title # config.title / config.author / home or custom content
+
+######## Article ########
+article:
+  # 如果没有指定封面，是否根据 tags 作为关键词搜索封面？
+  auto_cover: false # 搜索范围 https://source.unsplash.com/
+  # 如果没有指定 excerpt 和 description，将自动取多长的内容作为文章摘要？
   auto_excerpt: 0
   # 分类颜色
   category_color:
@@ -18,11 +63,13 @@ article:  # 如果没有指定 excerpt 和 description，将自动取多长的�
   license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
   # 分享
   share: [wechat, weibo, email, link]
-  # 你可能感兴趣的文章-需要安装npm i hexo-related-popular-posts
+  # 相关文章，需要安装插件 (for layout: post)
+  # npm i hexo-related-popular-posts
   related_posts:
-    enable: true
-    title: 您可能感兴趣的文章
+    enable: false
     max_count: 5
+    auto_cover: true # 如果没有封面就根据 tags 作为关键词搜索封面，开了此项将不会自动从文章中提取首张图片作为封面了。
+
 ######## 评论 ########
 
 comments:
@@ -49,8 +96,7 @@ comments:
     friends: #md5加密后的小伙伴邮箱
       - 
 
-######## 页脚带测试 ########
-
+######## 底部标签 ########
 footer:
   social:
     - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/08a41b181ce68.svg"/>'
@@ -62,15 +108,81 @@ footer:
     - icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/942ebbf1a4b91.svg"/>'
       url: http://wpa.qq.com/msgrd?v=3&uin=262782714
   license: '[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)'
-  source: # '[GitHub](https://github.com/xaoxuu/hexo-theme-stellar)'
+  source: #'[GitHub](https://github.com/xaoxuu/hexo-theme-stellar)'
+  more: # string or array (support markdown)
 
+#############################   以下可忽略  #############################
 ######## Tag Plugins ########
-
 tag_plugins:
+  # {% note text %}
   note:
-    default_color: 'blue' 
-  # white, dark, red, orange, yellow, green, cyan, blue, purple
-  # 对应颜色：白色、深色、红色、橙色、黄色、绿色、青色、蓝色、紫色
+    default_color: '' # light, dark, red, orange, yellow, green, cyan, blue, purple
   # {% checkbox %}
   checkbox:
-    interactive: true # 为用户启用交互式
+    interactive: false # enable interactive for user
+  emoji:
+    default: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/%s.gif
+    twemoji: https://cdn.jsdelivr.net/gh/twitter/twemoji/assets/svg/%s.svg
+    qq: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/%s.gif
+    aru: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/%s.gif
+    tieba: https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%s.png
+
+
+######## JS Plugins ########
+plugins:
+  ## required plugins ##
+  # jquery
+  jquery: https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js
+
+  ## lazyload plugins ##
+  # fancybox
+  fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css
+  # swiper
+  swiper:
+    enable: true
+    css: https://unpkg.com/swiper@6/swiper-bundle.min.css
+    js: https://unpkg.com/swiper@6/swiper-bundle.min.js
+  # issues api
+  sitesjs: /js/plugins/sites.js
+  friendsjs: /js/plugins/friends.js
+
+  ## optional plugins ##
+  # preload
+  preload:
+    enable: true
+    service: flying_pages # instant_page, flying_pages
+    instant_page: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js
+    flying_pages: https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js
+
+  # image lazyload
+  # https://www.npmjs.com/package/vanilla-lazyload
+  lazyload:
+    enable: true # [hexo clean && hexo s] is required after changing this value.
+    js: https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js
+    transition: blur # blur, fade
+
+  # https://scrollrevealjs.org/api/reveal.html
+  scrollreveal:
+    enable: #true
+    js: https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js
+    distance: 8px
+    duration: 500 # ms
+    interval: 100 # ms
+    scale: 1 # 0.1~1
+
+style:
+  darkmode: auto # auto / always / false
+  theme:
+    light: '#f8f8f8'
+    dark: '#313438'
+  animated_avatar:
+    animate: auto # auto, always
+    background: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp
+  codeblock:
+    scrollbar: 4px
+
+default:
+  avatar: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/avatar/round/3442075.svg
+  link: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/link/8f277b4ee0ecd.svg
+  cover: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/cover/76b86c0226ffd.svg
+  image: https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg
