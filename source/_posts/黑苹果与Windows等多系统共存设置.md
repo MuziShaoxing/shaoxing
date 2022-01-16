@@ -156,6 +156,8 @@ Windows关机不断电：关闭Windows快速启动，
 
 - 双硬盘双系统如OpenCore中无法找到Windows启动项，除核对上述内容外，仍需检查Windows磁盘分区表是否是MBR格式，如是需修正（转换）分区表为GUID格式
 
-- OpenCore 0.7.3 引导 找不到{% kbd Catalina10.15.7 %}启动项，需将mindate、minversion的值改为-1
+- 升级0.7.3及以上OpenCore引导版本 找不到{% kbd Catalina10.15.7及以下系统版本 %}启动项，
+  - 需将mindate、minversion的值改为-1
 ![x2FRVo](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/x2FRVo.png)
+![11:47-teeWuZ](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220103/11:47-teeWuZ.png)
 {% endfolding %}
