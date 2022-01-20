@@ -284,8 +284,8 @@ date: 2021-04-21 20:45:00
 - 教程合集
   - https://hackintool.vercel.app/
   - https://hackintool.netlify.app/
-- 我的成品EFI：https://pan.bilnn.com/s/Y7DKUW
-- 我的主题仓库: https://pan.bilnn.com/s/mmZnix?path=%2F
+- 我的成品EFI：https://www.123pan.com/s/SztA-5XMmH
+- 我的主题仓库: https://www.123pan.com/s/SztA-ZXMmH
 - 驱动下载地址： 
   - OC底层架构更新: [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg)
   - OC官方主题仓库: [OcBinaryData](https://github.com/acidanthera/OcBinaryData)
@@ -307,5 +307,4 @@ date: 2021-04-21 20:45:00
   - 安卓USB共享网络: [HoRNDIS](https://github.com/jwise/HoRNDIS/releases)
   - 解除更新限制: [RestrictEvents.kext](https://github.com/acidanthera/RestrictEvents)
 - ACPI补丁包：https://github.com/daliansky/OC-little
-- 驱动分流仓库：https://pan.bilnn.com/s/omr5SY
-{% endfolding %}
+  {% endfolding %}

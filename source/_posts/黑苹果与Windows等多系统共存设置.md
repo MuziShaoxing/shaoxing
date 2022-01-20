@@ -96,10 +96,10 @@ Mac环境下无法设置底层UEFI启动参数，我这里推荐各位单EFI分�
   1. 升级{% kbd OpenCore 0.7.3 %}{% psw 0.7.3以下是否可以使用此办法我不知道，但是你可以试试 %}
   2. 设置扫描策略无限制![18:33-8nvhWZ](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210911/18:33-8nvhWZ.png)
   3. 加载引导linux所需驱动[btrfs_x64.efi • ext4_x64.efi • OpenLinuxBoot.efi](https://github.com/acidanthera/OcBinaryData)
-    ![18:43-ioT46p](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210911/18:43-ioT46p.png)
+      ![18:43-ioT46p](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210911/18:43-ioT46p.png)
   4. 备份后删除EFI分区中的LinuxEFI文件（或改名）
   5. 重启检查是否正确引导。
-    {% endfolding %}
+      {% endfolding %}
 ## 双系统常见故障修复
 
 {% folding OpenCore引导Windows蓝屏报错 %}
@@ -146,7 +146,7 @@ Windows关机不断电：关闭Windows快速启动，
   - window8/10用户WIN+x选择管理员模式进入CMD 输入下面命令并回车代码:
   {% copy Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1   %} 
 - 方案二
-  - 下载[WinUTCOn.reg](https://pan.bilnn.com/s/6aWEfL)双击运行
+  - 下载[WinUTCOn.reg](https://www.123pan.com/s/SztA-eXMmH)双击运行
   {% endfolding %}
 
 {% folding OpenCore引导找不到Mac/Windows启动项 %}
@@ -158,6 +158,6 @@ Windows关机不断电：关闭Windows快速启动，
 
 - 升级0.7.3及以上OpenCore引导版本 找不到{% kbd Catalina10.15.7及以下系统版本 %}启动项，
   - 需将mindate、minversion的值改为-1
-![x2FRVo](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/x2FRVo.png)
-![11:47-teeWuZ](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220103/11:47-teeWuZ.png)
-{% endfolding %}
+  ![x2FRVo](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/x2FRVo.png)
+  ![11:47-teeWuZ](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220103/11:47-teeWuZ.png)
+  {% endfolding %}
