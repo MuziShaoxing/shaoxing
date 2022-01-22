@@ -19,8 +19,8 @@ theme: stellar
 avatar: https://cdn.jsdelivr.net/gh/Less-star/image-host/Wallpaper/favicon.png
 
 # 网站信息∂
-title: 少星部落阁
-subtitle: 不忘初心 | 勿忘心安
+title: 少星
+subtitle: 数学很纯粹，你不会就是不会！
 description: 七窍通了六窍——一窍不通
 author: 少 星
 email: 262782714@qq.com
@@ -33,8 +33,8 @@ metadata:
 # 网站logo
 inject:
   head:
-    - <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/Less-star/image-host/Wallpaper/favicon.png">
-    - <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Less-star/image-host/Wallpaper/favicon.png">
+    - <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220120/16:18-28314.png">
+    - <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220120/16:18-28314.png">
 
 permalink: :abbrlink.html  # 此处可以自己设置，也可以直接使用 :/abbrlink
 abbrlink:
@@ -48,7 +48,7 @@ per_page: 5
 pagination_dir: page
 
 # 网站URL
-url: https://shaoxing.vercel.app  # https://shaoxing.netlify.app # 
+url: https://blog.少星.icu  # https://shaoxing.netlify.app # 
 # 如果您的站点位于子目录中，请修改root：/子目录路径
 root: /
 
