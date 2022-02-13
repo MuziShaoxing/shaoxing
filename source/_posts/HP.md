@@ -34,7 +34,8 @@ date: 2021-04-21 20:45:00
 
 
 ### 系统支持
-![09:59-双系统](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20211006/09:59-%E5%8F%8C%E7%B3%BB%E7%BB%9F.png)
+{% image https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20211006/09:59-%E5%8F%8C%E7%B3%BB%E7%BB%9F.png download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20211006/09:59-%E5%8F%8C%E7%B3%BB%E7%BB%9F.png 预览图 %}
+
 **操作系统测试支持**
 
 
