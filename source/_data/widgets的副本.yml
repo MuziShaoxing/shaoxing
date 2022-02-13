@@ -1,9 +1,0 @@
-welcome:
-  layout: markdown
-  title: '每日一言'
-  content:
-    - '![logo](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/logo.png)<script type="text/javascript" src="https://www.iowen.cn/jitang/api/?format=js&charset=utf-8"></script>
-<div id="zha"><script>hitokoto()</script></div>'
-
-
-# <img src="https://v1.jinrishici.com/rensheng/lizhi.svg"><br/>

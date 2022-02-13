@@ -1,80 +1,29 @@
-# 十六进制配置
-## 文档：https://hexo.io/docs/configuration.html
-## 来源：https://github.com/hexojs/hexo/
-
-### 优化 ###
-# 加载速度 npm i hexo-all-minifier
-all_minifier: true
-# 网站地图
-# https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap
-sitemap:
-  path: sitemap.xml
-  tag: false
-  category: false
-  page_priority: 0.4
-  post_priority: 0.6
-
-# 主题设置
-theme: stellar
+# 网站信息
+title: 星在囧途
+subtitle: '数学很纯粹，你不会就是不会！'
+description: '七窍通了六窍——一窍不通'
+keywords:
+author: 少星
+language: [zh-CN, en, zh-CN, zh-TW]
 avatar: https://cdn.jsdelivr.net/gh/Less-star/image-host/Wallpaper/favicon.png
-
-# 网站信息∂
-title: 少星
-subtitle: 数学很纯粹，你不会就是不会！
-description: 七窍通了六窍——一窍不通
-author: 少 星
+favicon: https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220120/16:18-28314.png
 email: 262782714@qq.com
-language: zh-CN
+theme: stellar
 
-metadata:
-  author_id: 少星
-  language: zh-CN
-
-# 网站logo
-inject:
-  head:
-    - <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220120/16:18-28314.png">
-    - <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220120/16:18-28314.png">
-
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: http://blog.少星.icu
 permalink: :abbrlink.html  # 此处可以自己设置，也可以直接使用 :/abbrlink
+
+
 abbrlink:
-    alg: crc32   #算法： crc16(default) and crc32
-    rep: hex     #进制： dec(default) and hex
+    alg: crc32   # 算法 crc16(default) and crc32
+    rep: hex     # 进制  dec(default) and hex
 
-# 分页设置
-# Pagination
-## 设置为 0 禁用分页
-per_page: 5
-pagination_dir: page
-
-# 网站URL
-url: https://blog.少星.icu  # https://shaoxing.netlify.app # 
-# 如果您的站点位于子目录中，请修改root：/子目录路径
-root: /
-
-# 自定义生成目录
-# public_dir: docs
-
-pretty_urls:
-  trailing_index: false # 设置为false可从固定链接中删除尾随index.html
-
-# 一键部署github
-# 部署
 deploy:
-  type: git
-  repo: https://github.com/Less-star/Less-star.github.io.git
-  # example, https://less-star.github.io/
-  branch: gh-pages
-# RSS订阅-需要安装 hexo-generator-feed
-feed:
-  type: atom
-  path: atom.xml
-  limit: 100
+  - type: git
+    repo: https://github.com/MuziShaoxing/shaoxing.git
+    branch: gh-pages
+    message: "Build at {{ now('YYYY-MM-DD HH:mm:ss Z') }}"
 
-# Admin
-admin:
-    name: shaoxing
-    password: ainiyibeizi
-    secret: hey ainiyibeizi
-    expire: 60*1
-    cors: http://localhost:3000
+

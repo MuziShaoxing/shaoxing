@@ -7,7 +7,14 @@ Hackintool:
     src: https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/avatar.png
     small: 112px
     large: 240px
-  description: 此文档由本站在黑苹果安装过程中收集，测试，改编而成。所属资料版权归属原作者。
+  description: 此文档尚未完善，有请各路黑果大神提交教程信息，由小六负责整理归档。
+  sections:
+    '序章': [0,10]
+    '基础篇': [19, 199]
+    '优化篇': [200, 399]
+    '美化篇': [400, 599]
+    '进阶篇': [600, 799]
+    '软件篇': [800, 900]
 
 图片空间:
   title: 图片空间
@@ -20,18 +27,6 @@ Hackintool:
     large: 240px
   description: 欢迎来到我的相册。
 
-保险:
-  title: 保险
-  index: false
-  subtitle: 北大方正人寿保险-安行宝两全保险
-  tags: 
-  cover: true
-  logo:
-    src: https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/%E5%8C%97%E5%A4%A7%E6%96%B9%E6%AD%A3.jpeg
-    small: 112px
-    large: 240px
-  description: 保险
-
 影音时空:
   title: 影音时空
   index: false
@@ -43,3 +38,5 @@ Hackintool:
     small: 112px
     large: 240px
   description: 欢迎来到我的相册。
+
+
