@@ -1,7 +1,5 @@
 {
-  "hexo": {
-    "version": "6.0.0"
-  },
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "clean": "hexo clean",
@@ -23,10 +21,12 @@
     "hexo-renderer-marked": "^5.0.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-tag-dplayer": "^0.3.3",
     "hexo-tag-hint": "^0.3.1",
+    "hexo-tag-mmedia": "^1.1.7",
     "hexo-theme-landscape": "^0.0.3",
     "hexo-theme-stellar": "^1.6.1"
   },
-  "version": "0.0.0"
+  "hexo": {
+    "version": "6.0.0"
+  }
 }
