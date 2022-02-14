@@ -44,6 +44,8 @@ order: 1
 
 －－－－－－－
 ### 投送方式
+1. [星途私有云](http://xinglu.xyz)_请勿上传隐私文件！！！
+  - 展示区[pan.xinglu.xyz](pan.xinglu.xyz) 
 - [文件投送仓库](https://kodsky.com/#s/7WUrLEiA)登陆密码: {% psw  shaoxing   %}
 - 视频链接：视频链接请在下方评论
   - [直达本站留言](/#comments)
