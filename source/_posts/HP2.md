@@ -139,3 +139,7 @@ date: 2022-03-20 00:00:00
   - 安卓USB共享网络: [HoRNDIS](https://github.com/jwise/HoRNDIS/releases)
   - 解除更新限制: [RestrictEvents.kext](https://github.com/acidanthera/RestrictEvents)
 - ACPI补丁包：https://github.com/daliansky/OC-little
+
+# 打赏
+
+![12:40](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220322/12:40.png)![12:41](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220322/12:41.jpg)
