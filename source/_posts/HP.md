@@ -28,8 +28,6 @@ date: 2021-04-21 20:45:00
 | **显示器**       | **三星 SDC415A(13.3英寸)**                           |
 | **声卡**         | **瑞昱@英特尔HighDefinition Audio控制器「ALC290」** |
 | **网卡「更换」** | **英特尔 WiFi6 AX200 160MHz**                      |
-| **黑苹果当前测试** | **正式版 Big Sur 11.6 <br/> 正式版 Monterey 12.0.1**|
-| **报表更新日期** | **2021-10-06**                      |
 
 
 
@@ -43,7 +41,16 @@ date: 2021-04-21 20:45:00
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                         **Monterey**                         |                         **Big Sur**                          |                         **Catalina**                         |                        **Windows 10**                        |                        **Windows 11**                        |                           **UOS**                            |
 
-
+| 系统              | 最新版本    |
+| :---------------- | :---------- |
+| macOS Monterey    | 12.3        |
+| macOS Big Sur     | 11.6.5      |
+| macOS Catalina    | 10.15.7     |
+| macOS Mojave      | 10.14.6     |
+| macOS High Sierra | 10.13.6     |
+| Windows 10        | 21H2        |
+| Windows 11        | 21H2        |
+| 统信UOS           | 家庭版 21.1 |
 
 
 ### 功能检测
@@ -90,6 +97,40 @@ date: 2021-04-21 20:45:00
 ## 更新日志
 {% folding 点开查看更新日志 %}
 {% timeline %}
+
+<!-- node 2022 年 3 月 23 日 -->
+
+![12:42](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220323/12:42.png)
+
+- **停止更新-笔记本报废**
+
+- 当前更新信息
+
+  1. 添加**itlwm.kext**以支持Big Sur以下版本的Wi-Fi驱动
+     - 需搭配**HeliPort.dmg**
+     - 默认屏蔽对Big Sur 和Monterey的支持
+  2. 添加**IntelBTPatcher.kext**以修复Big Sur中某些蓝牙设备无法连接的问题
+     - 如：鼠标
+  3. oc版本/驱动递增。
+  4. 相关文件/文档撰写更新结案
+
+- 后续自我更新建议
+  1. 驱动递增
+  2. qtocc递增版本
+  3. 其他修改暂无。
+  
+- 当前最终版本为: 五系通杀-oc079
+  - 测试支持引导系统：
+  - | 系统              | 最新版本    |
+  | :---------------- | :---------- |
+  | macOS Monterey    | 12.3        |
+  | macOS Big Sur     | 11.6.5      |
+  | macOS Catalina    | 10.15.7     |
+  | macOS Mojave      | 10.14.6     |
+  | macOS High Sierra | 10.13.6     |
+  | Windows 10        | 21H2        |
+  | Windows 11        | 21H2        |
+  | 统信UOS           | 家庭版 21.1 |
 
 <!-- node 2022 年 01 月 11 日 -->
 
@@ -214,6 +255,7 @@ date: 2021-04-21 20:45:00
     - 移除sd卡驱动，眼不见为净
 
 <!-- node 2020 年 12 月 11 日 -->
+
 - 完善系统体验，设备硬件驱动完善。
 - 增加内核“Sinetekrtsx.kext”
     - 驱动内置SD卡读卡器。
@@ -309,3 +351,9 @@ date: 2021-04-21 20:45:00
   - 解除更新限制: [RestrictEvents.kext](https://github.com/acidanthera/RestrictEvents)
 - ACPI补丁包：https://github.com/daliansky/OC-little
   {% endfolding %}
+
+
+
+# 打赏
+
+![12:37](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220323/12:37.png)

@@ -10,25 +10,29 @@ date: 2022-03-20 00:00:00
 
 ## 系统检测
 
-  软件:             鲁大师 5.1021.1300.108
-  时间:             2022-03-20 11:23:23
-  网站:             http://www.ludashi.com
-
-| **电脑型号**       | **HP Pavilion Laptop 14-ce3xxx 笔记本电脑**                  |
-| :----------------- | :----------------------------------------------------------- |
-| **处理器**         | **英特尔 Core i5-1035G1 @ 1.00GHz 四核**                     |
-| **主板**           | **惠普 86E1 ( I/O - 3482 for Intel 495 Series 芯片组 Family On-Package Platform Controller Hub )** |
-| **主显卡**         | **Nvidia GeForce MX250 ( 2 GB / 惠普 )**                     |
-| **核显卡**         | **第十代智能英特尔® 酷睿™ 处理器的英特尔® 超核芯显卡**       |
-| **内存**           | **8 GB ( DDR4 2667MHz )**                                    |
-| **主硬盘**         | **英特尔 SSDPEKNW010T8H ( 1024 GB / 固态硬盘 )**             |
-| **显示器**         | **LG LGD0613 ( 14 英寸  )**                                  |
-| **声卡**           | **瑞昱 High Definition Audio @ 英特尔 英特尔智音技术音频控制器** |
-| **网卡**           | **英特尔 Wireless-AC 9560**                                  |
-| **黑苹果安装版本** | **正式版 Monterey 12.3**                                     |
-| **报表更新日期**   | **2022-03-20**                                               |
+| **电脑型号** | **HP Pavilion Laptop 14-ce3xxx 笔记本电脑**                  |
+| :----------- | :----------------------------------------------------------- |
+| **处理器**   | **英特尔 Core i5-1035G1 @ 1.00GHz 四核**                     |
+| **主板**     | **惠普 86E1 ( I/O - 3482 for Intel 495 Series 芯片组 Family On-Package Platform Controller Hub )** |
+| **主显卡**   | **Nvidia GeForce MX250 ( 2 GB / 惠普 )**                     |
+| **核显卡**   | **第十代智能英特尔® 酷睿™ 处理器的英特尔® 超核芯显卡**       |
+| **内存**     | **8 GB ( DDR4 2667MHz )**                                    |
+| **主硬盘**   | **英特尔 SSDPEKNW010T8H ( 1024 GB / 固态硬盘 )**             |
+| **显示器**   | **LG LGD0613 ( 14 英寸  )**                                  |
+| **声卡**     | **瑞昱 High Definition Audio @ 英特尔 英特尔智音技术音频控制器** |
+| **网卡**     | **英特尔 Wireless-AC 9560**                                  |
 
 
+
+## 系统支持
+
+| 系统              | 是否支持 |
+| :---------------- | :------- |
+| macOS Monterey    | 是       |
+| macOS Big Sur     | 是       |
+| macOS Catalina    | 否       |
+| macOS Mojave      | 否       |
+| macOS High Sierra | 否       |
 
 ## 功能检测
 
@@ -36,14 +40,14 @@ date: 2022-03-20 00:00:00
 
 | **功能**             | **依赖**                                                     | **备注**                                                     |
 | -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Wi-Fi**            | **AirportItlwm_Monterey.kext<br/>AirportItlwm_Big_Sur.kext<br/>itlwm.kext** | **AirportItlwm与itlwm不可共存使用<br/>ltlwm需要搭配软件[HeliPort.dmg](https://github.com/OpenIntelWireless/HeliPort/releases)** |
+| **Wi-Fi**            | **AirportItlwm_Monterey.kext<br/>AirportItlwm_Big_Sur.kext<br/>或itlwm.kext** | **AirportItlwm与itlwm不可共存使用<br/>ltlwm需要搭配软件[HeliPort.dmg](https://github.com/OpenIntelWireless/HeliPort/releases)** |
 | **蓝牙**             | **IntelBluetoothFirmware.kext**                              | **Big Sur蓝牙识别:<br/>IntelBluetoothInjector.kext<br/>Monterey蓝牙识别:<br/>BlueToolFixup.kext** |
 | **声卡**             | **AppleALC.kext**                                            | **扬声器<br/>麦克风<br/>3.5mm接口**                          |
-| **显卡**             | **WhateverGreen.kext**                                       | **AAPL,ig-platform-id:0000528A**                             |
+| **显卡**             | **WhateverGreen.kext**                                       | **AAPL,ig-platform-id:01005C8A**<br/>**device-id:5C8A0000**  |
 | **电池电量**         | **ACPIBatteryManager.kext<br/>ECEnabler.kext**               | **1:驱动，2:电池补丁**                                       |
 | **CPU 电源管理**     | **SSDT-PLUG.aml**                                            |                                                              |
-| **SMBIOS**           | **MacBookPro16,2**                                           | **仿冒机型-三码请自我刷新**                                  |
-| **休眠/睡眠**        | **SSDT-DWAK.aml**|                                                               |
+| **SMBIOS**           | **MacBookAir9,1**                                            | **仿冒机型-三码请自我刷新**                                  |
+| **休眠/睡眠**        | **SSDT-DWAK.aml**                                            |                                                              |
 | **USB 电源属性**     | **SSDT-EC-USBX-LAPTOP.aml**                                  |                                                              |
 | **USB 2.0, USB 3.0** | **USBPorts.kext**                                            | **或“SSDT-UIAC.aml”<br/>请禁用“USBInjectAll.kext”**          |
 | **亮度调节快捷键**   | **BrightnessKeys.kext<br/>SSDT-PNLF-SKL_KBL.aml**            | **如遇蓝屏-请配合重命名PNLF更名XNLF**                        |
@@ -67,8 +71,7 @@ date: 2022-03-20 00:00:00
 | 独显-MX250 | 无   | 无法驱动                        |
 | 开机音频   | 无   | 原因不详                        |
 | 随航投屏   | 无   | 尚未测试                        |
-|            |      |                                 |
-| 隔空投送   |      | 更换苹果拆机卡/博通网卡即可使用 |
+| 隔空投送   | 无   | 更换苹果拆机卡/博通网卡即可使用 |
 
 > 上述检测信息实时更新，以最新版引导为校准
 
@@ -104,7 +107,7 @@ date: 2022-03-20 00:00:00
 1. 开机黑屏修复
 2. 睡眠唤醒黑屏修复
 3. SSDT补丁-精准定位
-4. 中文注释填写
+4. 中文注释撰写。
 5. 改机型“MacBookAir9,1”
 
 {% endtimeline %}
@@ -142,4 +145,4 @@ date: 2022-03-20 00:00:00
 
 # 打赏
 
-![12:40](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220322/12:40.png)![12:41](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220322/12:41.jpg)
+![12:37](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220323/12:37.png)
