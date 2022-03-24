@@ -85,6 +85,11 @@ date: 2022-03-20 00:00:00
 
 {% timeline %}
 
+<!-- node 2022 年 3 月 23 日 -->
+
+- 修复BUG电池维修:
+  - 删除~~ACPIBatteryManager.kext~~，更换成**SMCBatteryManager.kext**
+
 <!-- node 2022 年 3 月 22 日 -->
 
 1. 开机黑屏修复
