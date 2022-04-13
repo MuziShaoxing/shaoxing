@@ -8,69 +8,69 @@ dark: true
 date: 2022-03-20 00:00:00
 ---
 
-## 系统检测
+# GitHub仓库: [立即前往](https://github.com/MuziShaoxing/HP-Pavilion-Laptop-14-ce3xxx-1035G1)
+
+## 概览
+
+### 系统检测
 
 | **电脑型号** | **HP Pavilion Laptop 14-ce3xxx 笔记本电脑**                  |
 | :----------- | :----------------------------------------------------------- |
-| **处理器**   | **英特尔 Core i5-1035G1 @ 1.00GHz 四核**                     |
+| **CPU**      | **英特尔 Core i5-1035G1 @ 1.00GHz 四核**                     |
 | **主板**     | **惠普 86E1 ( I/O - 3482 for Intel 495 Series 芯片组 Family On-Package Platform Controller Hub )** |
-| **主显卡**   | **Nvidia GeForce MX250 ( 2 GB / 惠普 )**                     |
-| **核显卡**   | **第十代智能英特尔® 酷睿™ 处理器的英特尔® 超核芯显卡**       |
+| **独显**     | **Nvidia GeForce MX250 ( 2 GB / 惠普 )**                     |
+| **核显**     | **第十代智能英特尔® 酷睿™ 处理器的英特尔® 超核芯显卡**       |
 | **内存**     | **8 GB ( DDR4 2667MHz )**                                    |
-| **主硬盘**   | **英特尔 SSDPEKNW010T8H ( 1024 GB / 固态硬盘 )**             |
-| **显示器**   | **LG LGD0613 ( 14 英寸  )**                                  |
+| **硬盘**     | **英特尔 SSDPEKNW010T8H ( 1024 GB / 固态硬盘 )**             |
+| **屏幕**     | **LG LGD0613 ( 14 英寸  )**                                  |
 | **声卡**     | **瑞昱 High Definition Audio @ 英特尔 英特尔智音技术音频控制器** |
-| **网卡**     | **博通 94360Z4**                                             |
+| **无线**     | **博通 94360Z4**_2022-0401更换                               |
 | **有线**     | **RTL8111/8168/8411 Gigabit Ethernet Controller**            |
 
+### 系统支持测试
 
-
-## 系统支持
-
-| 系统              | 是否支持 |
-| :---------------- | :------- |
-| macOS Monterey    | 是       |
-| macOS Big Sur     | 是       |
-| macOS Catalina    | 否       |
-| macOS Mojave      | 否       |
-| macOS High Sierra | 否       |
+| 系统     | Monterey | Big Sur | Catalina | Mojave | High Sierra |
+| -------- | -------- | ------- | -------- | ------ | ----------- |
+| 支持状态 | 是       | 是      | 否       | 否     | 否          |
 
 ## 功能检测
 
-{% folding 正常驱动硬件 %}
+### 正常驱动硬件
 
-| **功能**             | **依赖**                                          | **备注**                                                     |
-| -------------------- | ------------------------------------------------- | ------------------------------------------------------------ |
-| **Wi-Fi**            | 免驱卡                                            | **Bcm94360z4**                                               |
-| **蓝牙**             | 免驱卡                                            | **Bcm94360z4**                                               |
-| **声卡**             | **AppleALC.kext**                                 | **扬声器<br/>麦克风<br/>3.5mm接口**                          |
-| **显卡**             | **WhateverGreen.kext**                            | **AAPL,ig-platform-id:01005C8A**<br/>**device-id:5C8A0000**  |
-| **电池电量**         | **ACPIBatteryManager.kext<br/>ECEnabler.kext**    | **1:驱动，2:电池补丁**                                       |
-| **CPU 电源管理**     | **SSDT-PLUG.aml**                                 |                                                              |
-| **SMBIOS**           | **MacBookAir9,1**                                 | **仿冒机型-三码请自我刷新**                                  |
-| **休眠/睡眠**        | **SSDT-DWAK.aml**                                 |                                                              |
-| **USB 电源属性**     | **SSDT-EC-USBX-LAPTOP.aml**                       |                                                              |
-| **USB 2.0, USB 3.0** | **USBPorts.kext**                                 | **或“SSDT-UIAC.aml”<br/>请禁用“USBInjectAll.kext”**          |
-| **亮度调节快捷键**   | **BrightnessKeys.kext<br/>SSDT-PNLF-SKL_KBL.aml** | **如遇蓝屏-请配合重命名PNLF更名XNLF**                        |
-| **键盘与触控板手势** | **VoodooPS2Controller.kext**                      | **全部手势都可用**                                           |
-| **🔗安卓USB共享网络** | **HoRNDIS.kext**                                  | **根据需求选择是否启用**                                     |
-| **美化-白果鼠标**    | **FakeAppleUSBMouse.kext**                        | **需改ID- [点击查看教程](https://shaoxing.netlify.app/aa6b9ae8.html)** |
-| **SATA磁盘识别**     | **CtlnaAHCIPort.kext**                            | **也许你会需要**                                             |
-| **FN功能键**         | **免驱**                                          | **部分按键异常&无效**                                        |
-| **SD读卡器**         | **免驱**                                          | **正常**                                                     |
-| **文件保险箱**       | **勾选协议覆盖“Firmware Volume”**                 | **正常**                                                     |
+| **功能**             | **依赖**                                      | **备注**                                                     |
+| -------------------- | --------------------------------------------- | ------------------------------------------------------------ |
+| **Wi-Fi**            | **免驱**                                      | **Bcm94360z4**                                               |
+| **蓝牙**             | **免驱**                                      | **Bcm94360z4**                                               |
+| **声卡**             | **AppleALC.kext**                             | **扬声器<br/>麦克风<br/>3.5mm接口**                          |
+| **显卡**             | **WhateverGreen.kext**                        | **AAPL,ig-platform-id:0000528A**                             |
+| **电池电量**         | **SMCBatteryManager.kext<br/>ECEnabler.kext** | **1:电池驱动，2:电池补丁**                                   |
+| **CPU 电源管理**     | **SSDT-PLUG.aml**                             |                                                              |
+| **SMBIOS**           | **MacBook Air 9,1**                           | **仿冒机型-三码请自我刷新**                                  |
+| **休眠/睡眠**        | 免驱                                          | **备用SSDT-DWAK.aml睡眠几乎不掉电**                          |
+| **USB 电源属性**     | **SSDT-EC.aml**                               |                                                              |
+| **USB 2.0, USB 3.0** | **USBPorts.kext**                             | **或“SSDT-UIAC.aml”<br/>请禁用“USBInjectAll.kext”**          |
+| **亮度调节快捷键**   | **BrightnessKeys.kext<br/>SSDT-PNLF-CFL.aml** | F2——F3                                                       |
+| **键盘与触控板手势** | **VoodooPS2Controller.kext**                  | **全部手势都可用**                                           |
+| **🔗安卓USB共享网络** | **HoRNDIS.kext**                              | **根据需求选择是否启用**                                     |
+| **美化-白果鼠标**    | **FakeAppleUSBMouse.kext**                    | **需改ID- [点击查看教程](https://shaoxing.netlify.app/aa6b9ae8.html)** |
+| **SATA磁盘识别**     | **CtlnaAHCIPort.kext**                        | **也许你会需要**                                             |
+| **FN功能键**         | **免驱__修补:SSDT-XOSI.aml**                  | 部分按键异常&无效                                            |
+| **SD读卡器**         | **USB端口X1占用**                             | **正常**                                                     |
+| **文件保险箱**       | **勾选协议覆盖“Firmware Volume”**             | **正常**                                                     |
+| **开机音duang**      | **设置信息**                                  | 正常                                                         |
+| 唤醒                 | 免驱                                          | 备用**HibernationFixup.kext**                                |
 
-{% endfolding %}
+| FN+  |   F1   | F2    | F3    | F4     | F5     | F6   | F7    | F8    | F9     | F10       | F11    | F12    |
+| ---- | :----: | ----- | ----- | ------ | ------ | ---- | ----- | ----- | ------ | --------- | ------ | ------ |
+| 功能 | 自定义 | 亮度- | 亮度+ | 自定义 | 键盘灯 | 静音 | 音量- | 音量+ | 上一曲 | 播放&暂停 | 下一曲 | 无识别 |
 
 
-
-{% folding 不可驱动/未测试硬件/功能 %}
+### 尚未测试及无法驱动的硬件
 
 | 功能       | 依赖     | 备注                            |
 | ---------- | -------- | ------------------------------- |
 | 指纹       | 无       | 无法驱动                        |
 | 独显-MX250 | 无       | 无法驱动                        |
-| 开机音频   | 无       | 原因不详                        |
 | 随航投屏   | 无       | 尚未测试                        |
 | 隔空投送   | 无       | 更换苹果拆机卡/博通网卡即可使用 |
 | 散热风扇   | 设备参数 | 无完美驱动，已删除              |
@@ -79,24 +79,26 @@ date: 2022-03-20 00:00:00
 
 | 故障描述                     | 疑似相关                              |
 | ---------------------------- | ------------------------------------- |
-| Monterey「宗卷哈希值不匹配」 | BlueToolFixup.kext<br/>换免驱卡解决！ |
-| 键盘灯开关「按键黑屏」       | 未知，疑似对应休眠键值                |
-| 功能键不工作                 | 功能键：F1，F4，F12，电源键单击       |
+| Monterey「宗卷哈希值不匹配」 | BlueToolFixup.kext<br/>免驱卡间歇出现 |
+| 进入OpenCorePkg两秒黑屏切换  | 未知                                  |
+| FN功能键                     | F12无效                               |
+
 
 
 > 上述检测信息实时更新，以最新版引导为校准
 
-{% endfolding %}
+
+
+## BIOS设置
+
+1. 禁用安全启动
+1. 关闭传统模式
 
 
 
 ## 更新日志
 
-{% folding 点开查看更新日志 %}
-
-{% timeline %}
-
-## 置顶注意事项
+### 置顶注意事项
 
 - 由于有中文注释存在，故OC验证会报错！请忽略以下错误：
   - ACPI->Add[*]->**Comment contains illegal character!**
@@ -106,60 +108,119 @@ date: 2022-03-20 00:00:00
 - 成功进入桌面后，请第一时间更新三码信息，
   - 测试三码会导致某些情况数据丢失！！！
 
-<!-- node 2022年4月5日 -->
 
-- 待更新
 
-<!-- node 2022年4月4日 -->
+### 2022年4月09日
+
+- 更新ACPI补丁
+
+  | 原补丁                  | 替换为               |
+  | ----------------------- | -------------------- |
+  | SSDT-EC-USBX-LAPTOP.aml | SSDT-EC.aml          |
+  | SSDT-PLUG-_SB.PR00.aml  | SSDT-PLUG-DRTNIA.aml |
+  | SSDT-PS2K.aml           | SSDT-XOSI.aml        |
+  | SSDT-HP-FixLidSleep.aml | 新增可选固定盖子休眠 |
+  | SSDT-Disable_DGPU.aml   | 通过SSDT屏蔽独显     |
+
+- 使用「SSDT-XOSI.aml」重新修复定义FN功能键
+
+  - FN+F1与FN+F4可识别，无映射，「可以手动映射」
+  - FN+F5键值正常，不再附带休眠。
+
+- **取消勾选**——~~**Kernel-Quirks-AppleXcpmCfgLock**~~
+
+  - 一次巧合，我发现我不需要勾选也能用
+
+- **修改**——Misc-boot-Hibernate Mode为Auto
+
+  - 尝试新的睡眠方式
+
+- 更正「安全启动」，改成「Default」
+
+  - 不写没更新bata
+
+- 取消勾选**UEFI-Drivers-ConnectDrivers**以加速进入引导界面
+
+  - 需要开机音频的自己点回来。
+
+- 更换新的引导主题**OpenCore**
+
+- 增加屏蔽独显SSDT“**SSDT-Disable_DGPU.aml**”
+
+### 2022年4月05日
+
+- 修复FN+F5功能键「休眠/黑屏」
+
+- 修复电源键无效「短按休眠-长按电源菜单」
+
+- 增加仿冒新设备，使之更像白果
+
+- 增加内容
+
+  - 添加**ACPI**补丁
+
+    1. SSDT-DMAC.aml——DMA控制器
+    2. SSDT-MCHC.aml——内存控制器
+    3. SSDT-MEM2.aml——仿冒 MEM2
+    4. SSDT-PPMC.aml——仿冒PPMC
+    5. SSDT-PS2K.aml——修复某些键盘异常问题-已知停用后FN+F5休眠
+    6. SSDT-PMCR.aml——长按唤醒电源键菜单
+    7. SSDT-LIDpatch.aml——盒盖睡眠
+       - 重命名**_LID to XLID**
+
+### 2022年4月04日
 
 1. 移除引导参数，合并至显卡设备参数
 
    - ~~**-igfxdbeo igfxfw=2 watchdog=0 -igfxblr agdpmod=vit9696 igfxrpsc=1 igfxagdc=0**~~ 
+
 2. 移除「**分离**」无线网卡驱动，主文件不再具有无线网卡驱动加载信息
 
    - 我换网卡啦，免驱卡！！！
 
    - 如果需要，请自行添加「[参考内容](https://shaoxing.vercel.app/f8cb7961.html)」
+
 3. 移除「**黑屏补丁**」「**RTC唤醒**」「**睡眠补丁**」
+
 4. 移除无关紧要的设备属性
+
 5. 移除「启用语音辅助」选项
 
    - 不影响开机音，移除后没有了按键延迟
+
 6. 移除「安全启动」，改回禁用「Disabled」
 
    - 目测没啥区别，没必要开
-7. 修复核显卡**HEVC**硬解加速「无法激活」
 
-<!-- node 2022年3月27日 -->
+### 2022年3月27日
 
 1. 睡眠唤醒黑屏修复调整
    - 增加**HibernationFixup.kext**实测唤醒正常
 2. 修改核显卡名称为“**Nvidia GeForce MX250**”显存**2048MB**
    - **伪装**「独显」被**驱动**的**假象**！！！
 
-<!-- node 2022 年 3 月 23 日 -->
+### 2022年3月23日
 
-- 修复BUG电池维修:
-  - 删除~~ACPIBatteryManager.kext~~，更换成**SMCBatteryManager.kext**
-  
-- 开启开机音频支持“duang”
-  
-    - UEFI-Audio-AudioDevice:**PciRoot(0x0)/Pci(0x1F,0x3)**
+1. 修复BUG
+   - 电池维修:删除~~ACPIBatteryManager.kext~~，更换成**SMCBatteryManager.kext**
+   - 注：如果换电池或其他情况下出现电池维修，换一次驱动即可。。
+2. 开启开机音频支持“duang”
+   - UEFI-Audio-AudioDevice:**PciRoot(0x0)/Pci(0x1F,0x3)**
 
-<!-- node 2022 年 3 月 22 日 -->
+### 2022年3月22日
 
 1. 开机黑屏修复
 2. 睡眠唤醒黑屏修复
 3. SSDT补丁-精准定位
-4. 中文注释撰写。
+4. 中文注释填写
 5. 改机型“MacBookAir9,1”
 
-
-
-<!-- node 2022 年 3 月 20 日 -->
+### 2022年3月20日
 
 - 创建EFI储存库-部署基础数据库
+
 - 已驱动功能
+
   - Wi-Fi，蓝牙
   - 有线网卡
   - 显卡
@@ -174,11 +235,7 @@ date: 2022-03-20 00:00:00
   - USB定制
   - 触摸板-全功能
 
-{% endtimeline %}
-
-{% endfolding %}
-
-
+  
 
 ## 下载地址聚合
 
@@ -207,6 +264,6 @@ date: 2022-03-20 00:00:00
   - 解除更新限制: [RestrictEvents.kext](https://github.com/acidanthera/RestrictEvents)
 - ACPI补丁包：https://github.com/daliansky/OC-little
 
-# 打赏
+# 打赏作者
 
 ![12:37](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220323/12:37.png)
