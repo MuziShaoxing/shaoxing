@@ -98,6 +98,24 @@ date: 2021-04-21 20:45:00
 {% folding 点开查看更新日志 %}
 {% timeline %}
 
+<!-- node 2022 年 6 月 25 日 -->
+
+- 尝试更新“Ventura 13.0”的须知
+
+  1. 升级OpenCore版本0.8.2以上
+
+  2. 升级显卡驱动“WhateverGreen.kext”1.6.0以上
+
+  3. 修改显卡仿冒id如下
+
+     | AAPL,ig-platform-id： | 00001B59 |
+     | --------------------- | -------- |
+     | device-id：           | 16590000 |
+
+  4. 以上须知仅供参考，尚未实测，如有需要，请自行修改
+
+
+
 <!-- node 2022 年 3 月 23 日 -->
 
 ![12:42](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220323/12:42.png)
@@ -170,6 +188,7 @@ date: 2021-04-21 20:45:00
 
 <!-- node 2021 年 8 月 5 日 -->
 升级OpenCore0.7.2正式版底包,更新部分驱动版本
+
 - 替换全套网卡驱动为{% u ax200专用精简版 %}
 - 调整SSDT补丁为专用补丁
   - 增加重命名PNLF renamed XNLF 
