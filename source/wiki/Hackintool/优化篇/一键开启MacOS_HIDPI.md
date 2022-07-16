@@ -11,7 +11,7 @@ order: 203
 同时，此脚本也可以通过注入修补后的 EDID 修复闪屏，或者睡眠唤醒后的闪屏问题，当然这个修复因人而异（如4400-4600）
 
 脚本发布[项目地址](https://github.com/xzhih/one-key-hidpi)
-![14:27-gQ9YxR](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210921/14:27-gQ9YxR.png)
+![14:27-gQ9YxR](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210921/14:27-gQ9YxR.png)
 
 ## 使用教程
 ### 远程模式

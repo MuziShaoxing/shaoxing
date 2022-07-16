@@ -1,6 +1,6 @@
 ---
 title: 黑苹果与Windows双系统共存设置
-cover: 'https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/2-深林里的小鹿.png'
+cover: 'https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/2-深林里的小鹿.png'
 dark: true
 tags:
   - 双系统
@@ -12,7 +12,7 @@ abbrlink: 6629381b
 
 ## 如何安装双系统
 ### 成品欣赏
-![22:45-双系统](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210908/22:45-双系统.png)
+![22:45-双系统](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210908/22:45-双系统.png)
 ### Mac系统安装Windows
 - 启动转换助理安装Windows:[苹果官网](https://support.apple.com/zh-cn/guide/bootcamp-assistant/toc/mac) 
 
@@ -43,12 +43,12 @@ PS：上述过程可能会出错，相关错误信息有科技大佬博主在维
 - 使用[OpenCore Configurator](https://macwk.com/soft/opencore-configurator)
   - 打开**OpenCore Configurator**后桌面点击右上角图标，挂载分区，输入密码，打开分区即可
   - 复制准备好的EFI文件，粘贴到EFI分区内
-  ![Ok60mY](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Ok60mY.jpg)
+  ![Ok60mY](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Ok60mY.jpg)
 - 使用终端
   - 终端输入以下代码，查找分区IDENTIFIER值
   {% copy diskutil list %}
   - 你会得到以下磁盘信息，从中截取EFI分区后面IDENTIFIER值为“disk0s1”
-  ![OENxNL](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/OENxNL.png)
+  ![OENxNL](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/OENxNL.png)
   - 则你的挂载EFI分区的代码便是{% kbd sudo diskutil mount disk0s1 %} 
   - 终端输入结果即可挂载
   - 复制粘贴即可
@@ -57,7 +57,7 @@ PS：上述过程可能会出错，相关错误信息有科技大佬博主在维
 
 {% folding Windows系统下（同PE) %}
 Windows环境无法原生挂载EFI分区，需要借助软件写入EFI分区内容
-![37kfhO](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/37kfhO.jpg)
+![37kfhO](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/37kfhO.jpg)
 - 单EFI分区双系统：打开EFI文件夹将OC文件夹拖入进去
 - 多EFI分区双系统：找到对应EFI分区将整个EFI文件夹拖进去
 {% endfolding %}
@@ -66,9 +66,9 @@ Windows环境无法原生挂载EFI分区，需要借助软件写入EFI分区内�
 {% folding Windows使用DiskGenius %}
 - 方案一: 使用DiskGenius
   - 打开DiskGenius-工具-设置UEFI BIOS启动项（如果没有请更新软件版本）
-  - ![nn2E68](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/nn2E68.jpg)
+  - ![nn2E68](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/nn2E68.jpg)
   - 点击添加，选择刚才复制的EFI分区中目录EFI-OC-OPENCORE.EFI双击即可添加
-  - ![FfJskW](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/FfJskW.jpg)
+  - ![FfJskW](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/FfJskW.jpg)
   - 选择保存启动项设置，并勾选下次启动进入BIOS，在BIOS启动序列中将OC设置为第一启动项即可（启动项名称可自定义）
   {% endfolding %}
 
@@ -84,7 +84,7 @@ Mac环境下无法设置底层UEFI启动参数，我这里推荐各位单EFI分�
 - 使用OpenCore Configurator打开config.plist选择下图路径设置自定义启动项
 - 关机重启即可
 {% folding 图示 %}
-![Vqvfre](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Vqvfre.jpg)
+![Vqvfre](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Vqvfre.jpg)
 - 注：可能出现引导Windows蓝屏
 - 升级Windows可能导致进不去系统。。
 - 优点是，重置nvram不会丢失启动项
@@ -94,9 +94,9 @@ Mac环境下无法设置底层UEFI启动参数，我这里推荐各位单EFI分�
 - 0.7.3更新后支持了OpenCore原生引导linux，从此再也不需要多一个分区专门放置LinuxEFI了
 - 使用方式：
   1. 升级{% kbd OpenCore 0.7.3 %}{% psw 0.7.3以下是否可以使用此办法我不知道，但是你可以试试 %}
-  2. 设置扫描策略无限制![18:33-8nvhWZ](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210911/18:33-8nvhWZ.png)
+  2. 设置扫描策略无限制![18:33-8nvhWZ](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210911/18:33-8nvhWZ.png)
   3. 加载引导linux所需驱动[btrfs_x64.efi • ext4_x64.efi • OpenLinuxBoot.efi](https://github.com/acidanthera/OcBinaryData)
-      ![18:43-ioT46p](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210911/18:43-ioT46p.png)
+      ![18:43-ioT46p](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210911/18:43-ioT46p.png)
   4. 备份后删除EFI分区中的LinuxEFI文件（或改名）
   5. 重启检查是否正确引导。
       {% endfolding %}
@@ -113,7 +113,7 @@ Mac环境下无法设置底层UEFI启动参数，我这里推荐各位单EFI分�
 
 - 台式机
   - 勾选Booter-Quirks-{% kbd SyncRuntimePermissions %}
-  - ![OX6rak](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/OX6rak.png)
+  - ![OX6rak](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/OX6rak.png)
 
 
 {% endfolding %}
@@ -136,7 +136,7 @@ PS C:\Windows\system32> wmicwmic:root\cli>csproductCaption         Description  
 {% folding Windows关机不断电 %}
 Windows关机不断电：关闭Windows快速启动，
 1. 资源管理器地址栏输入{% u “控制面板\硬件和声音\电源选项\” %}弹出窗口左侧“{% kbd 选择电源按钮功能 %}”
-![c7nznF](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/c7nznF.jpg)
+![c7nznF](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/c7nznF.jpg)
 {% endfolding %} 
 
 {% folding 双系统时间不同步 %}
@@ -152,12 +152,12 @@ Windows关机不断电：关闭Windows快速启动，
 {% folding OpenCore引导找不到Mac/Windows启动项 %}
 - 单磁盘双系统如OpenCore中无法找到Windows启动项，请更改配置表：
 {% u MISC-Security- %}{% kbd Scan Policy %}参数为“0”“注是零不是字母O”详见下图
-![ef9IpC](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/ef9IpC.jpg)
+![ef9IpC](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/ef9IpC.jpg)
 
 - 双硬盘双系统如OpenCore中无法找到Windows启动项，除核对上述内容外，仍需检查Windows磁盘分区表是否是MBR格式，如是需修正（转换）分区表为GUID格式
 
 - 升级0.7.3及以上OpenCore引导版本 找不到{% kbd Catalina10.15.7及以下系统版本 %}启动项，
   - 需将mindate、minversion的值改为-1
-  ![x2FRVo](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/x2FRVo.png)
-  ![11:47-teeWuZ](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220103/11:47-teeWuZ.png)
+  ![x2FRVo](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/x2FRVo.png)
+  ![11:47-teeWuZ](https://gcore.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220103/11:47-teeWuZ.png)
   {% endfolding %}

@@ -99,7 +99,7 @@ cat /proc/asound/card1/codec#0 > ~/Desktop/Codec.txt
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rlxkhmkj31qc1f6awh.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rlxkhmkj31qc1f6awh.jpg)
 
 
 
@@ -109,7 +109,7 @@ cat /proc/asound/card1/codec#0 > ~/Desktop/Codec.txt
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rp1h1zqj31qc1f6tu9.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rp1h1zqj31qc1f6tu9.jpg)
 
 
 
@@ -139,7 +139,7 @@ PS: N/A节点无效无需整理
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0ruzqsv0j31qc1f6h0k.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0ruzqsv0j31qc1f6h0k.jpg)
 
 
 
@@ -163,7 +163,7 @@ PS: 常见的节点设备描述如下：
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rr0c3j7j31i21fc1bi.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rr0c3j7j31i21fc1bi.jpg)
 
 
 
@@ -171,7 +171,7 @@ PS: 常见的节点设备描述如下：
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rtddnoij31qc1f6tn4.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rtddnoij31qc1f6tn4.jpg)
 
 
 
@@ -181,7 +181,7 @@ PS: 常见的节点设备描述如下：
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rsd7nz6j30u00zagt5.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rsd7nz6j30u00zagt5.jpg)
 
 
 
@@ -194,7 +194,7 @@ PS: 常见的节点设备描述如下：
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rwbp9r0j31js11i12t.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rwbp9r0j31js11i12t.jpg)
 
 
 
@@ -202,7 +202,7 @@ PS: 常见的节点设备描述如下：
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rwzv78dj30sc0wmdm0.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rwzv78dj30sc0wmdm0.jpg)
 
 
 
@@ -210,7 +210,7 @@ PS: 常见的节点设备描述如下：
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rxl8nrzj30sc0wmgqq.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rxl8nrzj30sc0wmgqq.jpg)
 
 
 
@@ -218,7 +218,7 @@ PS: 常见的节点设备描述如下：
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rxs4ee3j30sc0wmdl1.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rxs4ee3j30sc0wmdl1.jpg)
 
 
 
@@ -226,7 +226,7 @@ PS: 常见的节点设备描述如下：
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rzb85g2j31i21fcam3.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0rzb85g2j31i21fcam3.jpg)
 
 
 
@@ -235,7 +235,7 @@ PS: 常见的节点设备描述如下：
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0s19qdobj32cg1fau0r.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0s19qdobj32cg1fau0r.jpg)
 
 
 
@@ -243,7 +243,7 @@ PS: 常见的节点设备描述如下：
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0s1lqb2zj32gy1fa1kx.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0s1lqb2zj32gy1fa1kx.jpg)
 
 
 
@@ -251,7 +251,7 @@ PS: 常见的节点设备描述如下：
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0s2jqwz6j320w18q7h5.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0s2jqwz6j320w18q7h5.jpg)
 
 
 
@@ -259,13 +259,13 @@ PS: 常见的节点设备描述如下：
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0s2qqvltj320w18qnaw.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0s2qqvltj320w18qnaw.jpg)
 
 
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0s3cxnnhj320w18qaoa.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0s3cxnnhj320w18qaoa.jpg)
 
 
 
@@ -273,7 +273,7 @@ PS: 常见的节点设备描述如下：
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0s69hvhfj31rg1fi4fa.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0s69hvhfj31rg1fi4fa.jpg)
 
 
 
@@ -297,7 +297,7 @@ git clone https://github.com/goodwin/ALCPlugFix
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0s84o8vij31qc1f6twi.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0s84o8vij31qc1f6twi.jpg)
 
 
 
@@ -319,7 +319,7 @@ cd EAPD-Codec-Commander
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0swd71qcj31p818kank.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0swd71qcj31p818kank.jpg)
 
 
 
@@ -329,7 +329,7 @@ PS: 这里需要设定的节点数据分别是line in和mic in，其他节点无
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0syo8oezj31qc1f6qqy.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0syo8oezj31qc1f6qqy.jpg)
 
 
 
@@ -377,13 +377,13 @@ PS: 关于CodecCommander，可以[点击这里](https://github.com/RehabMan/EAPD
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0stj21kcj3220180dvi.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0stj21kcj3220180dvi.jpg)
 
 
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0st47xc9j32201801a0.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0st47xc9j32201801a0.jpg)
 
 
 
@@ -439,7 +439,7 @@ PS: 需要注意的是有人用的是VoodooHDA.pkg安装的，这种情况需要
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0t2suhufj31qc1f64ef.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0t2suhufj31qc1f64ef.jpg)
 
 
 
@@ -524,7 +524,7 @@ cd codecgraph
 
 
 
-![img](https://cdn.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0t3vra4yj31u60f2n07.jpg)
+![img](https://gcore.jsdelivr.net/gh/athlonreg/BlogImages/Images/006dLY5Ily1fy0t3vra4yj31u60f2n07.jpg)
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: HP-ENVY 13-D025
-cover: https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210917/06:47-14152327.png
+cover: https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210917/06:47-14152327.png
 dark: true
 tags:
   - 笔记本
@@ -32,12 +32,12 @@ date: 2021-04-21 20:45:00
 
 
 ### 系统支持
-{% image https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20211006/09:59-%E5%8F%8C%E7%B3%BB%E7%BB%9F.png download:https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20211006/09:59-%E5%8F%8C%E7%B3%BB%E7%BB%9F.png 预览图 %}
+{% image https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20211006/09:59-%E5%8F%8C%E7%B3%BB%E7%BB%9F.png download:https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20211006/09:59-%E5%8F%8C%E7%B3%BB%E7%BB%9F.png 预览图 %}
 
 **操作系统测试支持**
 
 
-| [![Monterey](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Monterey.png)](https://www.apple.com.cn/macos/monterey-preview/) | [![Big_Sur1](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Big_Sur1.png) ](https://www.apple.com.cn/macos/big-sur/) | [![Catalina](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Catalina.png) ](https://www.apple.com.cn/newsroom/2019/10/macos-catalina-is-available-today/) | [![icon_58x58](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Windows/icon_58x58.png)](https://www.microsoft.com/zh-cn/windows/features) | [![Windows11](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Windows11.png) ](https://www.microsoft.com/zh-cn/windows/windows-11) | [![23:46-icon_58x58](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210909/23:46-icon_58x58.png)](https://www.chinauos.com/resource/download-home) |
+| [![Monterey](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Monterey.png)](https://www.apple.com.cn/macos/monterey-preview/) | [![Big_Sur1](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Big_Sur1.png) ](https://www.apple.com.cn/macos/big-sur/) | [![Catalina](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Catalina.png) ](https://www.apple.com.cn/newsroom/2019/10/macos-catalina-is-available-today/) | [![icon_58x58](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Windows/icon_58x58.png)](https://www.microsoft.com/zh-cn/windows/features) | [![Windows11](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Windows11.png) ](https://www.microsoft.com/zh-cn/windows/windows-11) | [![23:46-icon_58x58](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210909/23:46-icon_58x58.png)](https://www.chinauos.com/resource/download-home) |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                         **Monterey**                         |                         **Big Sur**                          |                         **Catalina**                         |                        **Windows 10**                        |                        **Windows 11**                        |                           **UOS**                            |
 
@@ -118,7 +118,7 @@ date: 2021-04-21 20:45:00
 
 <!-- node 2022 年 3 月 23 日 -->
 
-![12:42](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220323/12:42.png)
+![12:42](https://gcore.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220323/12:42.png)
 
 - **停止更新-笔记本报废**
 
@@ -181,7 +181,7 @@ date: 2021-04-21 20:45:00
 
 <!-- node 2021 年 9 月 7 日 -->
 升级OpenCore0.7.3正式版底包,更新部分驱动版本
-- 更换自制简约主题![23:52-20210909](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210909/23:52-20210909.png)
+- 更换自制简约主题![23:52-20210909](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210909/23:52-20210909.png)
 - {% del 移除原SD读卡器驱动“Sinetek-rtsx.kext” %}替换为{% u RealtekCardReader.kext+RealtekCardReaderFriend.kext %}
   - 优点: 内建SD读卡器，系统报告可查
   - 缺点: 休眠强制弹出（可热插拔恢复）{% sub 小毛病的了，不影响使用 color:light %}
@@ -203,7 +203,7 @@ date: 2021-04-21 20:45:00
      - *如不如此操作，两个驱动会在不同的版本出现报错。。。*
   3. 添加驱动“AirportItlwm_Monterey.kext”并设置最小内核“21.0.0”
      - *用于Wi-Fi在Monterey下正常运作。*
-- ![Stn0xI](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Stn0xI.png)
+- ![Stn0xI](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Stn0xI.png)
 - 添加Tools工具“CleanNvram.efi”“TpmInfo.efi”
 
 <!-- node 2021 年 7 月 15 日 -->
@@ -375,4 +375,4 @@ date: 2021-04-21 20:45:00
 
 # 打赏
 
-![12:37](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220323/12:37.png)
+![12:37](https://gcore.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220323/12:37.png)

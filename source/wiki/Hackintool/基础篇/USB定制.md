@@ -32,10 +32,10 @@ Windows定制: 由本站根据[杆杆只爱学习-【黑苹果】在Windows下�
 {% endfolding %}
 2. 勾选解除端口**Quirks**{% kbd XhciPortLimit%}
 {% folding 图示 %}
-![uqTuKW](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/uqTuKW.png)
+![uqTuKW](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/uqTuKW.png)
 {% endfolding %}
 3. 重启后打开Hackintool
-![jCPspV](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/jCPspV.png)
+![jCPspV](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/jCPspV.png)
 4. 将USB2.0/3.0U盘依次插入设备所有USB端口
   - {% kbd 对应端口信息会变成绿色 %}
 5. 删除所有{% emp 没有变成绿色 %}的端口
@@ -54,21 +54,21 @@ Windows定制: 由本站根据[杆杆只爱学习-【黑苹果】在Windows下�
 
 ### 端口映射
 1. 访问[USBToolBox](https://github.com/USBToolBox/tool)下载Windows.exe，并打开。
-![1](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/1.png)
+![1](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/1.png)
 2. 键入{% kbd D %} 回车，查看端口信息。
-![2](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/2.png)
+![2](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/2.png)
 3. 依次插入USB2.0，3.0，type-c设备，并保持五秒，确保被识别
-![3](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/3.png)
+![3](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/3.png)
 4. 识别完成后，键入{% kbd B %} 返回首页。
-![4](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/4.png)
+![4](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/4.png)
 5. 键入{% kbd S %} 查看端口信息，（此步操作后页面请截图）
-![5](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/5.png)
+![5](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/5.png)
 6. 确认后，键入{% kbd S %}完成导出。
-![6](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/6.png)
+![6](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/6.png)
 7. 收到此页面，证明驱动已经自定生成完毕，此时这个工具的使用已经结束
 8. 找到对应目录下的文件{% kbd UTBMap.kext %} 打开并找到{% kbd Info.plist %}文件
 9. 使用下载好的**PlistEDPlus-win**软件将其打开，依次展开{% u IOKitPersonalities -> XHC -> IOProviderMergeProperties -> ports %}
-![xDOq12](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/xDOq12.png)
+![xDOq12](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/xDOq12.png)
 10. 查看确认内部条目是否大于或等于15条
   - 如≥15请参考提示截图区域端口信息进行删减。
   - 如≤15，则直接下一步）
@@ -78,7 +78,7 @@ Windows定制: 由本站根据[杆杆只爱学习-【黑苹果】在Windows下�
   - -使用Windows版的occ编辑工具将**USBToolBox.kext，UTBMap.kext**加入oc配置表
   - 并移动驱动到{% kbd /EFI/OC/Kexts %}
   {% folding 图示 %}
-  ![7WNYE4](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/7WNYE4.png)
+  ![7WNYE4](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/7WNYE4.png)
   将驱动信息如图加入{% kbd Kernel-Add %}目录下或文本编辑器复制到对应节点位置粘贴
 ``` 
 <dict>

@@ -20,7 +20,7 @@ order: 202
 
 在配合**电源管理数据**、**机型ID**、**睿频配置**的情况下，可以实现对“**macOS CPU性能**”的调整。但是单独使用 **CPUFriend.kext** 并不会有任何效果，需要通过自己电脑生成 **CPUFriendDataProvider.kext**使用。
 
-![19:51-640](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220116/19:51-640.webp)
+![19:51-640](https://gcore.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220116/19:51-640.webp)
 
 这类教程网上有很多，大多数都操作比较繁琐，让作为小白的我头疼欲裂。
 
@@ -42,11 +42,11 @@ order: 202
 
 - 脚本作者：stevezhengshiqi（葫芦娃）
 
-![20:37-2YXE5y](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220116/20:37-2YXE5y.png)
+![20:37-2YXE5y](https://gcore.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220116/20:37-2YXE5y.png)
 
 解压后得到以下文件
 
-![20:37-22](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220116/20:37-22.webp)
+![20:37-22](https://gcore.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220116/20:37-22.webp)
 
 |         文件名          |    作用    |
 | :---------------------: | :--------: |
@@ -55,7 +55,7 @@ order: 202
 
 1. 根据你擅长的“语种“选择其中一个打开终端并将其拖入（以下以中文版为例）
 
-![20:13-not26j](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220116/20:13-not26j.png)
+![20:13-not26j](https://gcore.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220116/20:13-not26j.png)
 
 ```
   ____   ____    _   _   _____   ____    ___   _____   _   _   ____ 
@@ -124,7 +124,7 @@ OC: 放入 /OC/Kexts/ 并添加 README_CN 中的补丁到 config.plist - Kernel 
 
 6. 这时候你就可以在桌面看到生成的两个文件
 
-![20:48-xABE3f](https://cdn.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220116/20:48-xABE3f.png)
+![20:48-xABE3f](https://gcore.jsdelivr.net/gh/muzishaoxing/picture@main/shaoxing/20220116/20:48-xABE3f.png)
 
 7. 脚本运行结束, 请把桌面上的 **CPUFriend** 和 **CPUFriendDataProvider**进行加载。
 

@@ -4,18 +4,18 @@ mac:
   items:
     - title: MacWk
       url: https://macwk.com/
-      screenshot: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/mac/macwk-screenshot.jpg
-      avatar: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/mac/macwk-icon.png
+      screenshot: https://gcore.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/mac/macwk-screenshot.jpg
+      avatar: https://gcore.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/mac/macwk-icon.png
       description: 精品mac软件下载
     - title: MacBL
       url: https://www.macbl.com
-      screenshot: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/mac/macbl-screenshot.jpg
-      avatar: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/mac/macbl-icon.png
+      screenshot: https://gcore.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/mac/macbl-screenshot.jpg
+      avatar: https://gcore.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/mac/macbl-icon.png
       description: 马可菠萝 - 分享你喜欢的MAC应用
     - title: Xclient
       url: https://xclient.info
-      screenshot: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/mac/xclient-screenshot.jpg
-      avatar: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/mac/xclient-icon.png
+      screenshot: https://gcore.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/mac/xclient-screenshot.jpg
+      avatar: https://gcore.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/mac/xclient-icon.png
       description: 精品MAC应用分享
 
 online_tools:
@@ -24,17 +24,17 @@ online_tools:
   items:
     - title: Markdown编辑器
       url: https://md.mzr.me
-      screenshot: https://cdn.jsdelivr.net/gh/MuziShaoxing/Picture@main/image/png/20210509-kPd0D8.png
+      screenshot: https://gcore.jsdelivr.net/gh/MuziShaoxing/Picture@main/image/png/20210509-kPd0D8.png
       avatar:
       description:
     - title: 表格生成
       url: https://tableconvert.com
-      screenshot: https://cdn.jsdelivr.net/gh/MuziShaoxing/Picture@main/image/png/20210509-561I4B.png
+      screenshot: https://gcore.jsdelivr.net/gh/MuziShaoxing/Picture@main/image/png/20210509-561I4B.png
       avatar:
       description: 
     - title: AI抠图
       url: https://airmore.cn/remove-background-online
-      screenshot: https://cdn.jsdelivr.net/gh/MuziShaoxing/Picture@main/image/png/20210509-ls6gqN.png
+      screenshot: https://gcore.jsdelivr.net/gh/MuziShaoxing/Picture@main/image/png/20210509-ls6gqN.png
     - title: thum.io
       url: https://image.thum.io
       screenshot: https://7.dusays.com/2021/03/05/01ba3fde0e3d1.png
@@ -86,22 +86,22 @@ ios:
   items:
     - title: 设计师网址导航
       url: http://hao.uisdc.com
-      screenshot: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/design/uisdc-screenshot.jpg
+      screenshot: https://gcore.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/design/uisdc-screenshot.jpg
       avatar:
       description: 优设导航 - 学设计从这里开始！
     - title: 创造狮导航
       url: http://chuangzaoshi.com
-      screenshot: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/design/chuangzaoshi-screenshot.jpg
-      avatar: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/design/chuangzaoshi-icon.png
+      screenshot: https://gcore.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/design/chuangzaoshi-screenshot.jpg
+      avatar: https://gcore.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/design/chuangzaoshi-icon.png
       description: Discover the world’s top designers & creatives.
     - title: Iconfont
       url: https://www.iconfont.cn
-      screenshot: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/design/iconfont-screenshot.jpg
+      screenshot: https://gcore.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/design/iconfont-screenshot.jpg
       avatar:
       description: 阿里巴巴矢量图标库
     - title: Material Palette
       url: https://www.materialpalette.com
-      screenshot: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/design/materialpalette-screenshot.jpg
+      screenshot: https://gcore.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/design/materialpalette-screenshot.jpg
       avatar:
       description: Material Design Color Palette Generator.
     - title: LaTeX公式编辑器
@@ -116,7 +116,7 @@ ios:
       description:
     - title: Unsplash
       url: https://unsplash.com
-      screenshot: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/design/unsplash-screenshot.jpg
-      avatar: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/design/unsplash-icon.png
+      screenshot: https://gcore.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/design/unsplash-screenshot.jpg
+      avatar: https://gcore.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/design/unsplash-icon.png
       description: Photos for everyone.
 

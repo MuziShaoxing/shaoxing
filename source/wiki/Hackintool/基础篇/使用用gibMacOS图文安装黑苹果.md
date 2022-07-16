@@ -24,7 +24,7 @@ order: 30
 - 下图页面，点选**Download ZIP**下载，将其解压缩到某处
   - 如无法进入：{% psw 请自行科学上网 %}
 
-![15:28-POyOoc](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210921/15:28-POyOoc.jpg)
+![15:28-POyOoc](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210921/15:28-POyOoc.jpg)
 
 - [备用分流版gibmacOS含py](https://www.123pan.com/s/SztA-6XMmH)
    - 此链接可以忽略，脚本会自动下载并安装，不过下载速度，让人堪忧。
@@ -385,12 +385,12 @@ Please paste the recovery update pkg path to extract:
 ```
 8. 这时候将下载好的镜像安装包路径复制并填写进去回车键下一步
 9. 可通过右上角搜索pkg查找到文件所在位置
-![16:04-KNbUfB](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210921/16:04-KNbUfB.jpg)
+![16:04-KNbUfB](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210921/16:04-KNbUfB.jpg)
 10. 其他方式
    - 方式1：点选RecoveryHDMetaDmg.pkg后按住shift键+鼠标右键，列表会新增复制为路径选项
    - 方式2:点选后鼠标右键右键-属性-安全-对象名称
    - （获得文件路径方式有很多种，根据自己所知，本方式只是举例说明）
-![16:05-rWS1Ym](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210921/16:05-rWS1Ym.jpg)
+![16:05-rWS1Ym](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210921/16:05-rWS1Ym.jpg)
 
 11.将其复制，如：
 

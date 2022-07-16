@@ -1,7 +1,7 @@
 ---
 title: Mac键盘快捷键
 cover: |
-  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210910/22:16-5BNSTy.png
+  https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210910/22:16-5BNSTy.png
 dark: true
 tags:
   - 快捷键

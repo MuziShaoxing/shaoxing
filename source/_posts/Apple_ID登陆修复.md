@@ -2,7 +2,7 @@
 title: Apple_ID登陆修复
 abbrlink: ca810459
 cover: >-
-  https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210910/22:31-111.png
+  https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210910/22:31-111.png
 dark: true
 tags:
   - 修复
@@ -23,7 +23,7 @@ categories:
 1. 首先用Hackintool查一下网卡内建信息
 - [Hackintool 中文版 (黑苹果必备工具箱)](https://github.com/headkaze/Hackintool/releases）
 
-![WDuD3o](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/WDuD3o.png)
+![WDuD3o](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/WDuD3o.png)
 2. 查看网卡设备信息是否为{% kbd en0 %}，后面的{% emp 内建选项 %}是否☑️
 - 以下情况需要网卡内建
   - 网卡不是en0
@@ -44,7 +44,7 @@ categories:
   - 可能需要打开显示隐藏文件
 
 2. 在系统设置偏好的”网络””里删除所有网络连接
-![uG6pHc](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/uG6pHc.png)
+![uG6pHc](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/uG6pHc.png)
 
 3. 重新启动系统查看网络偏好设置
 - 重新在系统设置偏好的”网络”里加所有网络连接（这条一般系统会自动完成）
@@ -58,7 +58,7 @@ categories:
 - 此条我仅于oc测试过，并不确定是否支持四叶草
 
 1. 打开Hackintool-PCIe查找该设备PCI路径
-![C8I5px](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/C8I5px.png)
+![C8I5px](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/C8I5px.png)
 2. 找到对应的设备信息，鼠标右键点击他，并点击弹出选项{% kbd CopyDevicePath %}。此时剪贴板中将会出现一串设备代码
 
 3. 将其粘贴到你的OC引导：{% emp EFI-OC-config.plist %} 文件
@@ -67,10 +67,10 @@ categories:
 built-in   01   data
 ```
 {% folding 使用OpenCore Configurator %}
-![w6MmRE](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/w6MmRE.png)
+![w6MmRE](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/w6MmRE.png)
 {% endfolding %}
 {% folding 使用plistedit %}
-![iDcL84](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/iDcL84.png)
+![iDcL84](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/iDcL84.png)
 {% endfolding %}
 
 4. 重启确认是否已经完成设备内建。
@@ -82,7 +82,7 @@ built-in   01   data
 
 ### 洗白（换三码）
 直接看图
-![xDOq12](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Ppea54.png)
+![xDOq12](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/Ppea54.png)
 
 ### iMessage/Facetime登录异常修复
 - 尝试购买白果三码，或换三码摸奖

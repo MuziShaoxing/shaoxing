@@ -23,7 +23,7 @@ article:
 comments:
   service: valine
   valine:
-    js: https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/Valine.min.js
+    js: https://gcore.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/Valine.min.js
     appId: RiAUrbaCwE6vUfnRAu1bLoN2-gzGzoHsz
     appKey: aHSy9hrs4ywfy5iBrAlB0XP8 
     placeholder: 踏雪怎无痕？少侠，请留下你的观点！
@@ -50,16 +50,16 @@ comments:
 footer:
   social:
     github:
-      icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/08a41b181ce68.svg"/>'
+      icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/08a41b181ce68.svg"/>'
       url: https://github.com/muzishaoxing
     music:
-      icon: '<img src="https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/avatar.png"/>'
+      icon: '<img src="https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/uPic/avatar.png"/>'
       url: /wiki/Hackintool/
     unsplash:
-      icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/3616429.svg"/>'
+      icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/3616429.svg"/>'
       url: /wiki/Photos/
     comments:
-      icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/942ebbf1a4b91.svg"/>'
+      icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/942ebbf1a4b91.svg"/>'
       url: /about/#comments
 
 ######## Tag Plugins ########

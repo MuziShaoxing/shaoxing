@@ -2,6 +2,6 @@ welcome:
   layout: markdown
   title: '每日一言'
   content: |
-    ![logo](https://cdn.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210815/16:23-%E6%8B%BC.png)
+    ![logo](https://gcore.jsdelivr.net/gh/muzishaoxing/Picture@main/shaoxing/20210815/16:23-%E6%8B%BC.png)
     <script type="text/javascript" src="https://www.iowen.cn/jitang/api/?format=js&charset=utf-8"></script>
     <div id="zha"><script>hitokoto()</script></div>
