@@ -118,9 +118,9 @@ date: 2022-03-20 00:00:00
 1. OpenCorePkg递增0.8.5
 2. kest驱动版本递增
 3. 内置主题变更：酷安作者“牛扎味暮光糖”优秀简约主题
-   - [Windows](https://pan.xinglu.xyz/Al/Cloudreve/MacOS/%E4%B8%BB%E9%A2%98/%E4%B8%BB%E9%A2%98/Windows/Preview.gif)
-   - [Android](https://pan.xinglu.xyz/Al/Cloudreve/MacOS/%E4%B8%BB%E9%A2%98/%E4%B8%BB%E9%A2%98/Android/Preview.gif)
-   - [Monterey](https://pan.xinglu.xyz/Al/Cloudreve/MacOS/%E4%B8%BB%E9%A2%98/%E4%B8%BB%E9%A2%98/Monterey%E7%BB%8F%E5%85%B8/Preview.png)
+   - [Windows](https://pan.xinglu.xyz/Al/Cloudreve/MacOS/%E4%B8%BB%E9%A2%98/%E4%B8%BB%E9%A2%98/Windows/)
+   - [Android](https://pan.xinglu.xyz/Al/Cloudreve/MacOS/%E4%B8%BB%E9%A2%98/%E4%B8%BB%E9%A2%98/Android/)
+   - [Monterey](https://pan.xinglu.xyz/Al/Cloudreve/MacOS/%E4%B8%BB%E9%A2%98/%E4%B8%BB%E9%A2%98/Monterey%E7%BB%8F%E5%85%B8/)
 4. 移除内置序列号等“机型三码”数据
 
 ### 2022年9月15日
